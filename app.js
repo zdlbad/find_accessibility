@@ -26,6 +26,8 @@ app.use('*', function(req, res) {
   next();
 })
 
+app.get('/favicon.ico', (req, res) => res.status(204));
+
 //set static files folder
 app.use(express.static(path.join(__dirname, 'public')));
 
