@@ -19,9 +19,11 @@ const app = express();
 
 
 app.use('*', function(req, res) { 
-  console.log(req.baseUrl);
-  req.baseUrl = req.baseUrl.replace("https://", "http://");
+  console.log(req.protocol);
+
+  req.protocol = req.protocol.replace("https://", "http://");
   //res.redirect('http://' + req.headers.host + req.url);
+  next();
 })
 
 //set static files folder
