@@ -18,14 +18,7 @@ const errorController = require('./controllers/errorController');
 const app = express();
 
 
-app.use('*', function(req, res, next) { 
-  console.log(req.protocol);
 
-  if (req.protocol === "https")
-    //req.protocol = req.protocol.replace("https://", "http://");
-    res.redirect('http://' + req.headers.host + req.url);
-  next();
-})
 
 app.get('/favicon.ico', (req, res) => res.status(204));
 

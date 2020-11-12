@@ -27,6 +27,16 @@ const app = require('./app');
 const privateKey = fs.readFileSync(__dirname + '/selfsigned.key');;
 const certificate = fs.readFileSync(__dirname + '/selfsigned.crt');;
 const credentials = {key: privateKey, cet:certificate};
+
+httpServer.use('*', function(req, res, next) { 
+  console.log(req.protocol);
+
+  if (req.protocol === "https")
+    //req.protocol = req.protocol.replace("https://", "http://");
+    res.redirect('http://' + req.headers.host + req.url);
+  next();
+})
+
 const httpServer = http.createServer(app);
 const httpsServer = https.createServer(credentials, app);
 
