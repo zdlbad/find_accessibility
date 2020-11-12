@@ -25,13 +25,13 @@ app.set('view engine', 'pug');
 app.set('views', path.join(__dirname, 'views'));
 
 //security
-app.use(morgan('dev'));
-app.use(rateLimit({ max: 10, windowMs: 5 * 1000, message: 'You can only send 3 request within 5 seconds.' }));
-app.use(helmet());
-app.use(mongoSanitize());
-app.use(xssClean());
+// app.use(morgan('dev'));
+// app.use(rateLimit({ max: 10, windowMs: 5 * 1000, message: 'You can only send 3 request within 5 seconds.' }));
+// app.use(helmet());
+// app.use(mongoSanitize());
+// app.use(xssClean());
 app.use(express.json({ limit: '10kb' }));
-app.use(hpp({ whitelist: ['duration', 'ratingsAverage', 'ratingsQuantity', 'maxGroupSize', 'difficulty', 'price'] }));
+// app.use(hpp({ whitelist: ['duration', 'ratingsAverage', 'ratingsQuantity', 'maxGroupSize', 'difficulty', 'price'] }));
 
 // parser middleware
 app.use(cookieParser());
