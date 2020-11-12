@@ -21,9 +21,9 @@ const app = express();
 app.use('*', function(req, res, next) { 
   console.log(req.protocol);
 
-  if (req.protocol.contains("https://"));
-  //req.protocol = req.protocol.replace("https://", "http://");
-  res.redirect('http://' + req.headers.host + req.url);
+  if (req.protocol === "https")
+    //req.protocol = req.protocol.replace("https://", "http://");
+    res.redirect('http://' + req.headers.host + req.url);
   next();
 })
 
