@@ -1,5 +1,7 @@
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
+const https = require('https');
+const fs = require('fs');
 
 dotenv.config({ path: './config.env' });
 
@@ -19,6 +21,12 @@ mongoose
 const port = 3000;
 const app = require('./app');
 
-app.listen(port, () => {
+
+const privateKey = fs.readFileSync(__dirname + '/selfsigned.key');;
+const certificate = fs.readFileSync(__dirname + '/selfsigned.crt');;
+const credentials = {key: privateKey, cet:certificate};
+const httpsServer = https.createServer(credentials, app);
+
+httpsServer.listen(port, () => {
   console.log(`Listening on port ${port}...`);
 });
