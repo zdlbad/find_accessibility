@@ -1,0 +1,70 @@
+1. route: (CRUD for all)
+  0. Auth:
+    1. signUp
+      POST /users/signUp (filter body, check nessary fields - check password - create user - create jwt)
+    2. Login
+      POST /users/login (find user by email - check password - create jwt)
+    3. resetPwd
+      POST /users/forgotPwd (find user by email - generate reset token - send token + save token)
+      PATCH /users/resetPwd/:token (find user by token - reset password)
+    4. updatePwd (protected)
+      PATCH /users/updatePwd (find user by req.user - check password - check new password - update)
+    5. protected (verify token find user id - check user is valid: exist & password not changed)
+    6. restrict (check user role)
+
+  1. User:
+    1. update for user (protected)
+      PATCH /users/updateMe  (find user by req.user.id - filter valid fields - update)
+
+  2. Review:
+    1. check a user's reviews 
+      GET /reviews
+    2. create, delete reviews (protected)
+      DELETE /reviews/:reviewId
+    3. check a location's reviews
+      GET /locations/:locationId/reviews (find location - parent referencing)
+
+  3. Location: 
+    (select a point - select all kinds of filter[distance, type, different filter for different type] - show result)
+    1. check location details
+      GET /locations/:locationId (find location by id)
+    2. search by filter: 
+      POST? /locations (put filters into a JSONObject, then use query to find)
+      1. Parking: status, time
+      2. TrainStation: lift
+      3. PublicToilet: wheelchair, female, male, baby
+
+  
+
+Model:
+
+1. User
+
+  name: 
+  email: 
+  password: 
+  passwordConfirm:
+  role: 
+  passwordChangedAt: Date,
+  passwordResetToken: String,
+  passowrdResetTokenExpiration: Date,
+
+2. Location
+  locationType: 
+  name: 
+  location: 
+  ratingAvg: 
+  ratingCount:
+  parkingStatus: 
+  parkingPeriod: 
+  trainStationHasLift: 
+  toiletWheelChair: 
+  toiletMale: 
+  toiletFemale: 
+
+3. Review
+
+  user: 
+  location:
+  rating: 
+  comment: 

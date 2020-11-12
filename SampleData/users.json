@@ -1,0 +1,61 @@
+[{
+  "_id": {
+    "$oid": "5f71efc1d448425a067bbfa5"
+  },
+  "role": "user",
+  "photo": "no_photo.jpg",
+  "name": "Aland",
+  "email": "user3@test.email",
+  "password": "$2a$12$4S8/US6pdA0noMRT9V..mewM4npZaQj21WLNKp0zDD2bNy1r2KbjK",
+  "passwordChangedAt": null,
+  "passwordResetToken": null,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f71efc1d448425a067bbfa6"
+  },
+  "role": "user",
+  "photo": "no_photo.jpg",
+  "name": "Johnnie",
+  "email": "user4@test.email",
+  "password": "$2a$12$GeY7USXDtDBOBLRhMkJ/uuX6b2BVz98O06ug0/pT5lJb1vWCULu/u",
+  "passwordChangedAt": null,
+  "passwordResetToken": null,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f71efc1d448425a067bbfa7"
+  },
+  "role": "user",
+  "photo": "no_photo.jpg",
+  "name": "Renate",
+  "email": "user5@test.email",
+  "password": "$2a$12$LCnwJWPVKyo8YcQYqBPT6ux.sLWX4nCYnPVdfaEAk4FMTh59TfQbm",
+  "passwordChangedAt": null,
+  "passwordResetToken": null,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f71efc1d448425a067bbfa3"
+  },
+  "role": "user",
+  "photo": "no_photo.jpg",
+  "name": "Sandy",
+  "email": "user1@test.email",
+  "password": "$2a$12$s88Dw/HGZQt2kzfsYcvx.uygp06Qclq2N9ImEBLqxfwKd9fauG04u",
+  "passwordChangedAt": null,
+  "passwordResetToken": null,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f71efc1d448425a067bbfa4"
+  },
+  "role": "user",
+  "photo": "no_photo.jpg",
+  "name": "Marmaduke",
+  "email": "user2@test.email",
+  "password": "$2a$12$RA6Im3LpOMt6Zl.FVXZpCu4ahJs3a1F1bP3FRV1SAW201yrMG36oi",
+  "passwordChangedAt": null,
+  "passwordResetToken": null,
+  "__v": 0
+}]

@@ -1,0 +1,16 @@
+.map {
+  height: 650px;
+  width: 650px;
+}
+
+.marker {
+  background-image: url('../image/pin.png');
+  background-size: cover;
+  width: 32px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.floatLeft {
+  float: left;
+}

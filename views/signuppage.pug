@@ -1,0 +1,24 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel="shortcut icon" href="#")
+
+    title Swivel | SignUp Page
+  body
+    form#signupForm
+      label(for="signupEmail") Email
+      input(type="text" id="signupEmail" placeholder="Enter User Email" required)
+      br
+      label(for="signupPassword") Password
+      input(type="password" id="signupPassword" placeholder="Enter Password" required)
+      br
+      label(for="signupPasswordConfirm") Password
+      input(type="password" id="signupPasswordConfirm" placeholder="Enter Password Again" required)
+
+      button(type="submit") Sign Up
+
+  foot 
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js")
+    script(src="/js/signup.js")

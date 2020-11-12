@@ -1,0 +1,86 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    script(src='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.js')
+    link(href='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css' rel='stylesheet')
+    link(rel="shortcut icon" href="#")
+    link(rel='stylesheet' href='/css/style.css')
+    title Swivel | Home Page
+  body
+    h1 there should be a map below.
+
+    div#topControlBar 
+      if user
+        label= `Hello! ${user.name}`
+        img(src=`/image/users/${user.photo}`, alt="User Photo")
+        a(href='/mypage') My Page
+      else
+        a(href='/login') Login
+        a(href='/signup') SignUp
+
+
+    div
+      div#map.map.floatLeft
+
+      form#locationForm.floatLeft
+        div.center
+          label Center coordinates:
+          br 
+          label Longitude: 
+          label#centerLng
+          br
+          label Latitude: 
+          label#centerLat
+
+        div.range
+          label(for="searchRadius") Search Radius(0-10km): 
+          label#searchRadiusLabel 5
+          br
+          input(type="range" id="searchRadius" name="searchRadius" min="0.1" max="10" step="0.05" value = 5)
+
+        div.toiletSearchFilter
+          input(type="checkbox" id="locationType1" name="toilet" value="toilet" checked)
+          label(for="locationType1") Toilet:
+          div
+            label Gender: 
+            input(type="checkbox" id="toiletForMale" value="toiletForMale" name="toiletGender" checked)
+            label(for="toiletForMale") Male
+            input(type="checkbox" id="toiletForFemale" value="toiletForFemale" name="toiletGender" checked)
+            label(for="toiletForFemale") Female
+          div
+            label Wheel Chair Access: 
+            input(type="radio" id="toiletWheelChairAccessibleNeed" name="toiletWheelChairAccessibility" value="toiletWheelChairAccessible" checked)
+            label(for="toiletWheelChairAccessibleNeed") Need
+            input(type="radio" id="toiletWheelChairAccessibleNoNeed" name="toiletWheelChairAccessibility")
+            label(for="toiletWheelChairAccessibleNoNeed") Doesn't matter
+
+        div.parkingSearchFilter
+          input(type="checkbox" id="locationType2" name="parking" value="parking" checked)
+          label(for="locationType2") Parking:
+
+        div.trainStationSearchFilter
+          input(type="checkbox" id="locationType3" name="trainStation" value="trainStation" checked)
+          label(for="locationType3") TrainStation: 
+          br
+          label Lift in Station: 
+          input(type="radio" id="trainStationHasLiftNeed" name="trainStationHasLift" value="trainStationHasLift" checked)
+          label(for="trainStationHasLiftNeed") Need
+          input(type="radio" id="trainStationHasLiftNoNeed" name="trainStationHasLift")
+          label(for="trainStationHasLiftNoNeed") Doesn't matter
+
+        div.searchButton
+          button search
+
+      div#locations-block.floatLeft
+
+      div#reviews-block.floatLeft
+
+
+  foot
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js")
+    script(src='/js/mapbox.js')
+
+
+    //http://127.0.0.1:3000/homepage

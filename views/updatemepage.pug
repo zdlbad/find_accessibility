@@ -1,0 +1,22 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel="shortcut icon" href="#")
+
+    title Swivel | Update Me Page
+  body
+    form#updateMeForm
+      label(for="userName") New Name
+      input(type="text" id="newNameInput" placeholder="Enter a New Name" required)
+      img(src=`/image/users/${user.photo}` alt="User photo")
+      input(type="file" accept='image/*' id="userPhoto")
+      label(for="userPhoto") New Photo
+
+      button(type="submit") Update
+
+
+  foot 
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js")
+    script(src="/js/updateMe.js")

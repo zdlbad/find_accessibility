@@ -1,0 +1,172 @@
+[
+  {
+    "locationType": "parking",
+    "name": "locaiton_1",
+    "location": {
+      "description": "Aspen, USA",
+      "type": "Point",
+      "coordinates": [-106.822318, 39.190872],
+      "address": "419 S Mill St, Aspen, CO 81611, USA"
+    },
+    "ratingAvg": 2.9,
+    "ratingCount": 1,
+    "parkingOccupied": true,
+    "trainStationHasLift": false,
+    "toiletWheelChairAccessible": false,
+    "toiletForMale": false,
+    "toiletForFemale": true
+  },
+  {
+    "locationType": "trainStation",
+    "name": "locaiton_2",
+    "location": {
+      "description": "Aspen, USA",
+      "type": "Point",
+      "coordinates": [-106.822318, 39.190872],
+      "address": "419 S Mill St, Aspen, CO 81611, USA"
+    },
+    "ratingAvg": 1.2,
+    "ratingCount": 5,
+    "parkingOccupied": true,
+    "trainStationHasLift": true,
+    "toiletWheelChairAccessible": true,
+    "toiletForMale": true,
+    "toiletForFemale": false
+  },
+  {
+    "locationType": "parking",
+    "name": "locaiton_3",
+    "location": {
+      "description": "Aspen, USA",
+      "type": "Point",
+      "coordinates": [-106.822318, 39.190872],
+      "address": "419 S Mill St, Aspen, CO 81611, USA"
+    },
+    "ratingAvg": 4.9,
+    "ratingCount": 1,
+    "parkingOccupied": false,
+    "trainStationHasLift": true,
+    "toiletWheelChairAccessible": true,
+    "toiletForMale": true,
+    "toiletForFemale": true
+  },
+  {
+    "locationType": "toilet",
+    "name": "locaiton_4",
+    "location": {
+      "description": "Aspen, USA",
+      "type": "Point",
+      "coordinates": [-106.822318, 39.190872],
+      "address": "419 S Mill St, Aspen, CO 81611, USA"
+    },
+    "ratingAvg": 2.0,
+    "ratingCount": 1,
+    "parkingOccupied": true,
+    "trainStationHasLift": true,
+    "toiletWheelChairAccessible": false,
+    "toiletForMale": false,
+    "toiletForFemale": false
+  },
+  {
+    "locationType": "trainStation",
+    "name": "locaiton_5",
+    "location": {
+      "description": "Aspen, USA",
+      "type": "Point",
+      "coordinates": [-106.822318, 39.190872],
+      "address": "419 S Mill St, Aspen, CO 81611, USA"
+    },
+    "ratingAvg": 0.6,
+    "ratingCount": 5,
+    "parkingOccupied": false,
+    "trainStationHasLift": false,
+    "toiletWheelChairAccessible": true,
+    "toiletForMale": false,
+    "toiletForFemale": false
+  },
+  {
+    "locationType": "parking",
+    "name": "locaiton_6",
+    "location": {
+      "description": "Aspen, USA",
+      "type": "Point",
+      "coordinates": [-106.822318, 39.190872],
+      "address": "419 S Mill St, Aspen, CO 81611, USA"
+    },
+    "ratingAvg": 0.7,
+    "ratingCount": 3,
+    "parkingOccupied": true,
+    "trainStationHasLift": true,
+    "toiletWheelChairAccessible": false,
+    "toiletForMale": true,
+    "toiletForFemale": false
+  },
+  {
+    "locationType": "toilet",
+    "name": "locaiton_7",
+    "location": {
+      "description": "Aspen, USA",
+      "type": "Point",
+      "coordinates": [-106.822318, 39.190872],
+      "address": "419 S Mill St, Aspen, CO 81611, USA"
+    },
+    "ratingAvg": 0.0,
+    "ratingCount": 1,
+    "parkingOccupied": true,
+    "trainStationHasLift": true,
+    "toiletWheelChairAccessible": true,
+    "toiletForMale": true,
+    "toiletForFemale": false
+  },
+  {
+    "locationType": "parking",
+    "name": "locaiton_8",
+    "location": {
+      "description": "Aspen, USA",
+      "type": "Point",
+      "coordinates": [-106.822318, 39.190872],
+      "address": "419 S Mill St, Aspen, CO 81611, USA"
+    },
+    "ratingAvg": 5.0,
+    "ratingCount": 1,
+    "parkingOccupied": false,
+    "trainStationHasLift": false,
+    "toiletWheelChairAccessible": false,
+    "toiletForMale": true,
+    "toiletForFemale": false
+  },
+  {
+    "locationType": "trainStation",
+    "name": "locaiton_9",
+    "location": {
+      "description": "Aspen, USA",
+      "type": "Point",
+      "coordinates": [-106.822318, 39.190872],
+      "address": "419 S Mill St, Aspen, CO 81611, USA"
+    },
+    "ratingAvg": 3.5,
+    "ratingCount": 5,
+    "parkingOccupied": false,
+    "trainStationHasLift": false,
+    "toiletWheelChairAccessible": true,
+    "toiletForMale": true,
+    "toiletForFemale": true
+  },
+  {
+    "locationType": "parking",
+    "name": "locaiton_10",
+    "location": {
+      "description": "Aspen, USA",
+      "type": "Point",
+      "coordinates": [-106.822318, 39.190872],
+      "address": "419 S Mill St, Aspen, CO 81611, USA"
+    },
+    "ratingAvg": 4.7,
+    "ratingCount": 4,
+    "parkingOccupied": false,
+    "trainStationHasLift": true,
+    "toiletWheelChairAccessible": false,
+    "toiletForMale": true,
+    "toiletForFemale": false
+  }
+]

@@ -1,0 +1,146 @@
+[
+  {
+    "_id": "5f71efc7d448425a067bbfaa",
+    "location": {
+      "type": "Point",
+      "coordinates": [144.94396507490433, -37.80338469884515],
+      "description": "Aspen, USA",
+      "address": "419 S Mill St, Aspen, CO 81611, USA"
+    },
+    "ratingAvg": 4.9,
+    "ratingCount": 1,
+    "locationType": "parking",
+    "name": "2704",
+    "parkingOccupied": false
+  },
+  {
+    "_id": "5f71efc7d448425a067bbfab",
+    "location": {
+      "type": "Point",
+      "coordinates": [144.95909066756946, -37.8039946349673],
+      "description": "Public Toilet - Toilet 140 - Queensberry Street (Opposite 286 Queensberry Street)",
+      "address": "419 S Mill St, Aspen, CO 81611, USA"
+    },
+    "ratingAvg": 2,
+    "ratingCount": 1,
+    "locationType": "toilet",
+    "name": "Public Toilet - Toilet 140 - Queensberry Street (Opposite 286 Queensberry Street)",
+    "toiletWheelChairAccessible": false,
+    "toiletForMale": true,
+    "toiletForFemale": false
+  },
+  {
+    "_id": "5f71efc7d448425a067bbfac",
+    "location": {
+      "type": "Point",
+      "coordinates": [145.1630590000001, -37.87978499999997],
+      "description": "Glen Waverley",
+      "address": "419 S Mill St, Aspen, CO 81611, USA"
+    },
+    "ratingAvg": 0.6,
+    "ratingCount": 5,
+    "locationType": "trainStation",
+    "name": "Glen Waverley",
+    "trainStationHasLift": false
+  },
+  {
+    "_id": "5f71efc7d448425a067bbfa9",
+    "location": {
+      "type": "Point",
+      "coordinates": [144.963757, -37.809699999999964],
+      "description": "Melbourne Central",
+      "address": "419 S Mill St, Aspen, CO 81611, USA"
+    },
+    "ratingAvg": 1.2,
+    "ratingCount": 5,
+    "locationType": "trainStation",
+    "name": "Melbourne Central",
+    "trainStationHasLift": true
+  },
+  {
+    "_id": "5f71efc7d448425a067bbfad",
+    "location": {
+      "type": "Point",
+      "coordinates": [144.94395698879092, -37.803428726035634],
+      "description": "2706",
+      "address": "419 S Mill St, Aspen, CO 81611, USA"
+    },
+    "ratingAvg": 0.7,
+    "ratingCount": 3,
+    "locationType": "parking",
+    "name": "2706",
+    "parkingOccupied": true
+  },
+  {
+    "_id": "5f71efc7d448425a067bbfa8",
+    "location": {
+      "type": "Point",
+      "coordinates": [144.94607848013453, -37.82045109868588],
+      "description": "6429",
+      "address": "419 S Mill St, Aspen, CO 81611, USA"
+    },
+    "ratingAvg": 2.9,
+    "ratingCount": 1,
+    "locationType": "parking",
+    "name": "6429",
+    "parkingOccupied": true
+  },
+  {
+    "_id": "5f71efc7d448425a067bbfae",
+    "location": {
+      "type": "Point",
+      "coordinates": [144.96309721024045, -37.81383779217631],
+      "description": "Public Toilet - Toilet 6 - Elizabeth Street (Toilet Adjacent 200 Elizabeth Street)",
+      "address": "419 S Mill St, Aspen, CO 81611, USA"
+    },
+    "ratingAvg": 0,
+    "ratingCount": 1,
+    "locationType": "toilet",
+    "name": "Public Toilet - Toilet 6 - Elizabeth Street (Toilet Adjacent 200 Elizabeth Street)",
+    "toiletWheelChairAccessible": true,
+    "toiletForMale": true,
+    "toiletForFemale": false
+  },
+  {
+    "_id": "5f71efc7d448425a067bbfaf",
+    "location": {
+      "type": "Point",
+      "coordinates": [144.94482481471812, -37.802431124332074],
+      "description": "3730",
+      "address": "419 S Mill St, Aspen, CO 81611, USA"
+    },
+    "ratingAvg": 5,
+    "ratingCount": 1,
+    "locationType": "parking",
+    "name": "3730",
+    "parkingOccupied": false
+  },
+  {
+    "_id": "5f71efc7d448425a067bbfb1",
+    "location": {
+      "type": "Point",
+      "coordinates": [144.96609310265694, -37.8167541660727],
+      "description": "1471",
+      "address": "419 S Mill St, Aspen, CO 81611, USA"
+    },
+    "ratingAvg": 4.7,
+    "ratingCount": 4,
+    "locationType": "parking",
+    "name": "1471",
+    "parkingOccupied": false
+  },
+  {
+    "_id": "5f71efc7d448425a067bbfb0",
+    "location": {
+      "type": "Point",
+      "coordinates": [144.97340800000006, -37.811928999999964],
+      "description": "Parliament",
+      "address": "419 S Mill St, Aspen, CO 81611, USA"
+    },
+    "ratingAvg": 3.5,
+    "ratingCount": 5,
+    "locationType": "trainStation",
+    "name": "Parliament",
+    "trainStationHasLift": false
+  }
+]

@@ -1,0 +1,31 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    script(src='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.js')
+    link(href='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css' rel='stylesheet')
+    link(rel='stylesheet' href='/css/style.css')
+    title Swivel | My Page
+  body
+    h1= `Hi, ${user.name}! This is your own page!`
+    img(src=`/image/users/${user.photo}`, alt="User Photo")
+    div#userInfo(data-userid= `${user.id}`)
+
+    div
+      a(href="/updatepage") Update my profile
+      br
+      a(href="/updatepassword") Reset Password
+      br
+      button#logout Log Out
+
+
+    div
+      div#personalMap.map.floatLeft
+      div#locations-block.floatLeft
+      div#reviews-block.floatLeft
+
+  foot
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js")
+    script(src='/js/mypage.js')
+

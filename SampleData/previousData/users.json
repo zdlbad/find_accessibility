@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Sandy",
+    "email": "user1@test.email",
+    "role": "user",
+    "password": "test1234",
+    "passwordConfirm": null,
+    "passwordChangedAt": null,
+    "passwordResetToken": null,
+    "passwordResetTokenExpiration": null
+  },
+  {
+    "name": "Marmaduke",
+    "email": "user2@test.email",
+    "role": "user",
+    "password": "test1234",
+    "passwordConfirm": null,
+    "passwordChangedAt": null,
+    "passwordResetToken": null,
+    "passwordResetTokenExpiration": null
+  },
+  {
+    "name": "Aland",
+    "email": "user3@test.email",
+    "role": "user",
+    "password": "test1234",
+    "passwordConfirm": null,
+    "passwordChangedAt": null,
+    "passwordResetToken": null,
+    "passwordResetTokenExpiration": null
+  },
+  {
+    "name": "Johnnie",
+    "email": "user4@test.email",
+    "role": "user",
+    "password": "test1234",
+    "passwordConfirm": null,
+    "passwordChangedAt": null,
+    "passwordResetToken": null,
+    "passwordResetTokenExpiration": null
+  },
+  {
+    "name": "Renate",
+    "email": "user5@test.email",
+    "role": "user",
+    "password": "test1234",
+    "passwordConfirm": null,
+    "passwordChangedAt": null,
+    "passwordResetToken": null,
+    "passwordResetTokenExpiration": null
+  }
+]

@@ -1,0 +1,671 @@
+{
+  "meta" : {
+    "view" : {
+      "id" : "4w3d-fg6r",
+      "name" : "metro_stations_accessibility",
+      "averageRating" : 0,
+      "createdAt" : 1518407231,
+      "displayType" : "geoRows",
+      "downloadCount" : 1403,
+      "hideFromCatalog" : false,
+      "hideFromDataJson" : false,
+      "indexUpdatedAt" : 1551224944,
+      "newBackend" : true,
+      "numberOfComments" : 0,
+      "oid" : 27981229,
+      "provenance" : "official",
+      "publicationAppendEnabled" : false,
+      "publicationDate" : 1518407232,
+      "publicationGroup" : 14874626,
+      "publicationStage" : "published",
+      "rowsUpdatedAt" : 1518407232,
+      "rowsUpdatedBy" : "6hhy-amz5",
+      "tableId" : 14874626,
+      "totalTimesRated" : 0,
+      "viewCount" : 3,
+      "viewLastModified" : 1518669559,
+      "viewType" : "tabular",
+      "approvals" : [ {
+        "reviewableUid" : "mgkp-67ad",
+        "reviewedAt" : 1560825561,
+        "reviewedAutomatically" : false,
+        "state" : "approved",
+        "submissionId" : 800522,
+        "submissionObject" : "public_audience_request",
+        "submissionOutcome" : "change_audience",
+        "submittedAt" : 1518675266,
+        "workflowId" : 2180,
+        "reviewer" : {
+          "id" : "svy8-e7in",
+          "displayName" : "Johanna Hopper"
+        },
+        "submissionDetails" : {
+          "permissionType" : "READ"
+        },
+        "submissionOutcomeApplication" : {
+          "endedAt" : 1560825561,
+          "failureCount" : 0,
+          "startedAt" : 1560825561,
+          "status" : "success"
+        },
+        "submitter" : {
+          "id" : "4yi8-jvny",
+          "displayName" : "Will (CoM)"
+        }
+      } ],
+      "columns" : [ {
+        "id" : -1,
+        "name" : "sid",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":sid",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "id",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":id",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "position",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":position",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "created_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "created_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "updated_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "updated_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : 344923991,
+        "name" : "station",
+        "dataTypeName" : "text",
+        "fieldName" : "station",
+        "position" : 1,
+        "renderTypeName" : "text",
+        "tableColumnId" : 61193011,
+        "cachedContents" : {
+          "largest" : "Yarraville",
+          "non_null" : "219",
+          "null" : "0",
+          "top" : [ {
+            "item" : "Victoria Park",
+            "count" : "1"
+          }, {
+            "item" : "Merri",
+            "count" : "1"
+          }, {
+            "item" : "Newport",
+            "count" : "1"
+          }, {
+            "item" : "Preston",
+            "count" : "1"
+          }, {
+            "item" : "Bayswater",
+            "count" : "1"
+          }, {
+            "item" : "St Albans",
+            "count" : "1"
+          }, {
+            "item" : "Kooyong",
+            "count" : "1"
+          }, {
+            "item" : "Fairfield",
+            "count" : "1"
+          }, {
+            "item" : "Darebin",
+            "count" : "1"
+          }, {
+            "item" : "Holmesglen",
+            "count" : "1"
+          }, {
+            "item" : "South Kensington",
+            "count" : "1"
+          }, {
+            "item" : "Auburn",
+            "count" : "1"
+          }, {
+            "item" : "Kensington",
+            "count" : "1"
+          }, {
+            "item" : "Epping",
+            "count" : "1"
+          }, {
+            "item" : "Williamstown",
+            "count" : "1"
+          }, {
+            "item" : "Brunswick",
+            "count" : "1"
+          }, {
+            "item" : "Glenhuntly",
+            "count" : "1"
+          }, {
+            "item" : "Batman",
+            "count" : "1"
+          }, {
+            "item" : "Hawksburn",
+            "count" : "1"
+          }, {
+            "item" : "Patterson",
+            "count" : "1"
+          } ],
+          "smallest" : "Aircraft",
+          "cardinality" : "219"
+        },
+        "format" : { }
+      }, {
+        "id" : 344923992,
+        "name" : "the_geom",
+        "dataTypeName" : "point",
+        "fieldName" : "the_geom",
+        "position" : 2,
+        "renderTypeName" : "point",
+        "tableColumnId" : 61193012,
+        "cachedContents" : {
+          "non_null" : "219",
+          "null" : "0",
+          "top" : [ {
+            "item" : {
+              "coordinates" : [ 144.66091300000005, -37.89951099999996 ],
+              "type" : "Point"
+            },
+            "count" : "1"
+          }, {
+            "item" : {
+              "coordinates" : [ 144.70104700000002, -37.88326999999998 ],
+              "type" : "Point"
+            },
+            "count" : "1"
+          }, {
+            "item" : {
+              "coordinates" : [ 144.71997900000008, -37.62774299999995 ],
+              "type" : "Point"
+            },
+            "count" : "1"
+          }, {
+            "item" : {
+              "coordinates" : [ 144.72787700000003, -37.57939099999999 ],
+              "type" : "Point"
+            },
+            "count" : "1"
+          }, {
+            "item" : {
+              "coordinates" : [ 144.74719400000004, -37.87009999999998 ],
+              "type" : "Point"
+            },
+            "count" : "1"
+          }, {
+            "item" : {
+              "coordinates" : [ 144.760809, -37.866603 ],
+              "type" : "Point"
+            },
+            "count" : "1"
+          }, {
+            "item" : {
+              "coordinates" : [ 144.7726150000001, -37.86369399999995 ],
+              "type" : "Point"
+            },
+            "count" : "1"
+          }, {
+            "item" : {
+              "coordinates" : [ 144.77386, -37.700717 ],
+              "type" : "Point"
+            },
+            "count" : "1"
+          }, {
+            "item" : {
+              "coordinates" : [ 144.79381, -37.729602 ],
+              "type" : "Point"
+            },
+            "count" : "1"
+          }, {
+            "item" : {
+              "coordinates" : [ 144.80007, -37.744872999999984 ],
+              "type" : "Point"
+            },
+            "count" : "1"
+          }, {
+            "item" : {
+              "coordinates" : [ 144.80964300000005, -37.75758099999996 ],
+              "type" : "Point"
+            },
+            "count" : "1"
+          }, {
+            "item" : {
+              "coordinates" : [ 144.8135010000001, -37.86516599999999 ],
+              "type" : "Point"
+            },
+            "count" : "1"
+          }, {
+            "item" : {
+              "coordinates" : [ 144.82470999999998, -37.77765599999998 ],
+              "type" : "Point"
+            },
+            "count" : "1"
+          }, {
+            "item" : {
+              "coordinates" : [ 144.830604, -37.86724899999996 ],
+              "type" : "Point"
+            },
+            "count" : "1"
+          }, {
+            "item" : {
+              "coordinates" : [ 144.83232400000009, -37.78785099999999 ],
+              "type" : "Point"
+            },
+            "count" : "1"
+          }, {
+            "item" : {
+              "coordinates" : [ 144.840958, -37.86784299999999 ],
+              "type" : "Point"
+            },
+            "count" : "1"
+          }, {
+            "item" : {
+              "coordinates" : [ 144.86294800000007, -37.79925499999996 ],
+              "type" : "Point"
+            },
+            "count" : "1"
+          }, {
+            "item" : {
+              "coordinates" : [ 144.883604, -37.84271899999999 ],
+              "type" : "Point"
+            },
+            "count" : "1"
+          }, {
+            "item" : {
+              "coordinates" : [ 144.88564800000006, -37.801849000000004 ],
+              "type" : "Point"
+            },
+            "count" : "1"
+          }, {
+            "item" : {
+              "coordinates" : [ 144.885942, -37.83065099999999 ],
+              "type" : "Point"
+            },
+            "count" : "1"
+          } ],
+          "cardinality" : "219"
+        },
+        "format" : { }
+      }, {
+        "id" : 344923993,
+        "name" : "pids",
+        "dataTypeName" : "text",
+        "fieldName" : "pids",
+        "position" : 3,
+        "renderTypeName" : "text",
+        "tableColumnId" : 61193013,
+        "cachedContents" : {
+          "largest" : "No",
+          "non_null" : "219",
+          "null" : "0",
+          "top" : [ {
+            "item" : "Dot Matrix",
+            "count" : "115"
+          }, {
+            "item" : "No",
+            "count" : "76"
+          }, {
+            "item" : "LCD",
+            "count" : "27"
+          }, {
+            "item" : "CRT",
+            "count" : "1"
+          } ],
+          "smallest" : "CRT",
+          "cardinality" : "4"
+        },
+        "format" : { }
+      }, {
+        "id" : 344923994,
+        "name" : "he_loop",
+        "dataTypeName" : "text",
+        "fieldName" : "he_loop",
+        "position" : 4,
+        "renderTypeName" : "text",
+        "tableColumnId" : 61193014,
+        "cachedContents" : {
+          "largest" : "Yes",
+          "non_null" : "219",
+          "null" : "0",
+          "top" : [ {
+            "item" : "No",
+            "count" : "190"
+          }, {
+            "item" : "Yes",
+            "count" : "28"
+          }, {
+            "item" : "Plat 1 only",
+            "count" : "1"
+          } ],
+          "smallest" : "No",
+          "cardinality" : "3"
+        },
+        "format" : { }
+      }, {
+        "id" : 344923995,
+        "name" : "lift",
+        "dataTypeName" : "text",
+        "fieldName" : "lift",
+        "position" : 5,
+        "renderTypeName" : "text",
+        "tableColumnId" : 61193015,
+        "cachedContents" : {
+          "largest" : "Yes",
+          "non_null" : "219",
+          "null" : "0",
+          "top" : [ {
+            "item" : "No",
+            "count" : "185"
+          }, {
+            "item" : "Yes",
+            "count" : "34"
+          } ],
+          "smallest" : "No",
+          "cardinality" : "2"
+        },
+        "format" : { }
+      } ],
+      "grants" : [ {
+        "inherited" : false,
+        "type" : "viewer",
+        "flags" : [ "public" ]
+      } ],
+      "owner" : {
+        "id" : "by7m-q3n8",
+        "displayName" : "City of Melbourne Open Data Team",
+        "profileImageUrlLarge" : "/api/users/by7m-q3n8/profile_images/LARGE",
+        "profileImageUrlMedium" : "/api/users/by7m-q3n8/profile_images/THUMB",
+        "profileImageUrlSmall" : "/api/users/by7m-q3n8/profile_images/TINY",
+        "screenName" : "City of Melbourne Open Data Team",
+        "type" : "interactive",
+        "userSegment" : "site_member",
+        "flags" : [ "mayBeStoriesCoOwner" ]
+      },
+      "query" : { },
+      "rights" : [ "read" ],
+      "tableAuthor" : {
+        "id" : "by7m-q3n8",
+        "displayName" : "City of Melbourne Open Data Team",
+        "profileImageUrlLarge" : "/api/users/by7m-q3n8/profile_images/LARGE",
+        "profileImageUrlMedium" : "/api/users/by7m-q3n8/profile_images/THUMB",
+        "profileImageUrlSmall" : "/api/users/by7m-q3n8/profile_images/TINY",
+        "screenName" : "City of Melbourne Open Data Team",
+        "type" : "interactive",
+        "userSegment" : "site_member",
+        "flags" : [ "mayBeStoriesCoOwner" ]
+      },
+      "flags" : [ "default", "restorable", "restorePossibleForType" ]
+    }
+  },
+  "data" : [ [ "row-im6y.phcf_mavy", "00000000-0000-0000-1CC1-12EECCDE30D6", 0, 1518407232, null, 1518407232, null, "{ }", "Alamein", "POINT (145.07955800000002 -37.86884299999997)", "No", "No", "No" ]
+, [ "row-zjcr~ea24-t23f", "00000000-0000-0000-E129-BD6244E571DB", 0, 1518407232, null, 1518407232, null, "{ }", "Albion", "POINT (144.82470999999998 -37.77765599999998)", "Dot Matrix", "No", "No" ]
+, [ "row-6rtr~ruwn-vr2q", "00000000-0000-0000-E38A-DBA566A4DC1E", 0, 1518407232, null, 1518407232, null, "{ }", "Alphington", "POINT (145.031251 -37.77839599999999)", "Dot Matrix", "No", "No" ]
+, [ "row-5fgw-7rh4-8keu", "00000000-0000-0000-75D8-03A26720D970", 0, 1518407232, null, 1518407232, null, "{ }", "Altona", "POINT (144.830604 -37.86724899999996)", "LCD", "No", "No" ]
+, [ "row-js4v~drra~muh5", "00000000-0000-0000-CC78-A42A8D6BE863", 0, 1518407232, null, 1518407232, null, "{ }", "Anstey", "POINT (144.96056099999998 -37.761897999999974)", "No", "No", "No" ]
+, [ "row-wnp9.zkyh_5672", "00000000-0000-0000-3BF0-910ECB2AE1FE", 0, 1518407232, null, 1518407232, null, "{ }", "Armadale", "POINT (145.01937400000008 -37.856434999999976)", "Dot Matrix", "No", "No" ]
+, [ "row-zsr3-35bk_a3e5", "00000000-0000-0000-6A96-0229C6870300", 0, 1518407232, null, 1518407232, null, "{ }", "Ascot Vale", "POINT (144.92188399999998 -37.775420999999994)", "No", "No", "No" ]
+, [ "row-pbhz.f2us_aurt", "00000000-0000-0000-A9E2-DE34CC5C9189", 0, 1518407232, null, 1518407232, null, "{ }", "Ashburton", "POINT (145.081416 -37.861767999999984)", "No", "No", "No" ]
+, [ "row-m3ya-xnfx~spz9", "00000000-0000-0000-1396-124A367E9B6C", 0, 1518407232, null, 1518407232, null, "{ }", "Aspendale", "POINT (145.10200700000007 -38.02704499999999)", "No", "No", "No" ]
+, [ "row-pnu6-ggi9.w8i4", "00000000-0000-0000-A6C9-3A24575C0C61", 0, 1518407232, null, 1518407232, null, "{ }", "Auburn", "POINT (145.045617 -37.82241099999999)", "No", "No", "No" ]
+, [ "row-dd7q_m9is-tp93", "00000000-0000-0000-0C18-87017B0EF03F", 0, 1518407232, null, 1518407232, null, "{ }", "Balaclava", "POINT (144.993516 -37.86974699999996)", "Dot Matrix", "No", "No" ]
+, [ "row-ne7r~6ta8.ybhf", "00000000-0000-0000-3872-1E5539F05092", 0, 1518407232, null, 1518407232, null, "{ }", "Batman", "POINT (144.96274700000004 -37.73345899999998)", "No", "No", "No" ]
+, [ "row-ddwm_pj6d-ncp3", "00000000-0000-0000-D4F3-6BE3D19180BA", 0, 1518407232, null, 1518407232, null, "{ }", "Baxter", "POINT (145.160487 -38.194222999999965)", "No", "No", "No" ]
+, [ "row-tbnx.2gwh-qeim", "00000000-0000-0000-59B1-6381AEC39747", 0, 1518407232, null, 1518407232, null, "{ }", "Bayswater", "POINT (145.26826700000004 -37.84186299999999)", "LCD", "Yes", "Yes" ]
+, [ "row-acp5.xubh.u7j5", "00000000-0000-0000-B446-FE4B7D43BD9C", 0, 1518407232, null, 1518407232, null, "{ }", "Beaconsfield", "POINT (145.36604499999999 -38.050928)", "No", "No", "No" ]
+, [ "row-ra3v~kkz3-xx7i", "00000000-0000-0000-5DFA-90AA626113AD", 0, 1518407232, null, 1518407232, null, "{ }", "Belgrave", "POINT (145.35529100000008 -37.90909899999997)", "Dot Matrix", "No", "No" ]
+, [ "row-ub4b~jqcm-pqq9", "00000000-0000-0000-4FDE-58F4FB423F24", 0, 1518407232, null, 1518407232, null, "{ }", "Bell", "POINT (145.000181 -37.74556799999999)", "Dot Matrix", "No", "No" ]
+, [ "row-h2ys~28ck~gcvn", "00000000-0000-0000-C6CF-B27C3C58D8FB", 0, 1518407232, null, 1518407232, null, "{ }", "Bentleigh", "POINT (145.03689400000007 -37.91779299999996)", "LCD", "Yes", "Yes" ]
+, [ "row-6mfm_nuyx_wds9", "00000000-0000-0000-84A1-2D3E36F3DFE7", 0, 1518407232, null, 1518407232, null, "{ }", "Berwick", "POINT (145.34497299999998 -38.03968099999997)", "Dot Matrix", "No", "No" ]
+, [ "row-bbgz_news-q7jf", "00000000-0000-0000-0D56-8AFD490AD9C3", 0, 1518407232, null, 1518407232, null, "{ }", "Bittern", "POINT (145.1777390000001 -38.33774699999998)", "No", "No", "No" ]
+, [ "row-3fdu_zri3~ihac", "00000000-0000-0000-7BED-7B6AE5F5F509", 0, 1518407232, null, 1518407232, null, "{ }", "Blackburn", "POINT (145.15019700000005 -37.82015799999999)", "Dot Matrix", "No", "Yes" ]
+, [ "row-xt6m.bv8h-ddnf", "00000000-0000-0000-7BEE-AD7721706334", 0, 1518407232, null, 1518407232, null, "{ }", "Bonbeach", "POINT (145.11974500000008 -38.062926000000004)", "Dot Matrix", "No", "No" ]
+, [ "row-5spg.9w7w~gidx", "00000000-0000-0000-155A-140742924FBA", 0, 1518407232, null, 1518407232, null, "{ }", "Boronia", "POINT (145.28429700000004 -37.859830999999986)", "Dot Matrix", "No", "Yes" ]
+, [ "row-pacv.wt7w~9dsb", "00000000-0000-0000-2036-DCC8B9DB518D", 0, 1518407232, null, 1518407232, null, "{ }", "Box Hill", "POINT (145.1218 -37.81927399999995)", "CRT", "No", "Yes" ]
+, [ "row-if7e.dajb.i2rf", "00000000-0000-0000-5754-5F9295A978E5", 0, 1518407232, null, 1518407232, null, "{ }", "Brighton Beach", "POINT (144.989193 -37.92625499999997)", "Dot Matrix", "No", "No" ]
+, [ "row-pug9~cpm8~325f", "00000000-0000-0000-F8E8-BB6740F8EB31", 0, 1518407232, null, 1518407232, null, "{ }", "Broadmeadows", "POINT (144.91937000000007 -37.683362999999986)", "Dot Matrix", "No", "No" ]
+, [ "row-8kf9~uujy-ehk6", "00000000-0000-0000-D816-9B2CBE9ADB84", 0, 1518407232, null, 1518407232, null, "{ }", "Brunswick", "POINT (144.95955800000002 -37.767944)", "No", "No", "No" ]
+, [ "row-e8ah.873q_xwth", "00000000-0000-0000-BBDD-0A721D159972", 0, 1518407232, null, 1518407232, null, "{ }", "Burnley", "POINT (145.0076200000001 -37.827631)", "Dot Matrix", "No", "No" ]
+, [ "row-he5k.zcds.g82c", "00000000-0000-0000-F3BF-FEF1BE0B86CE", 0, 1518407232, null, 1518407232, null, "{ }", "Burwood", "POINT (145.08036800000002 -37.851350999999966)", "Dot Matrix", "No", "No" ]
+, [ "row-svm8.z2bk.idec", "00000000-0000-0000-86D8-171B9749EF44", 0, 1518407232, null, 1518407232, null, "{ }", "Camberwell", "POINT (145.0586820000001 -37.826607999999965)", "Dot Matrix", "No", "No" ]
+, [ "row-p5id~titk_idya", "00000000-0000-0000-C313-7514812CDDF2", 0, 1518407232, null, 1518407232, null, "{ }", "Canterbury", "POINT (145.08076900000003 -37.824703)", "No", "No", "No" ]
+, [ "row-fekr.ch6h-er9j", "00000000-0000-0000-2952-F47A3B41FE01", 0, 1518407232, null, 1518407232, null, "{ }", "Carnegie", "POINT (145.05857600000002 -37.886236999999994)", "No", "No", "No" ]
+, [ "row-xvqz-pd3c_6yj2", "00000000-0000-0000-1D3E-E6CA9207FE54", 0, 1518407232, null, 1518407232, null, "{ }", "Carrum", "POINT (145.122653 -38.07593699999995)", "Dot Matrix", "No", "No" ]
+, [ "row-rq76.aaym.ne59", "00000000-0000-0000-7EC0-F7CBADEC0D60", 0, 1518407232, null, 1518407232, null, "{ }", "Caulfield", "POINT (145.04274600000008 -37.87768299999999)", "Dot Matrix", "No", "No" ]
+, [ "row-7xbt-ybuk_xjqt", "00000000-0000-0000-2319-14C688230329", 0, 1518407232, null, 1518407232, null, "{ }", "Chatham", "POINT (145.08892300000002 -37.824276)", "No", "No", "No" ]
+, [ "row-new4_9rpv.3ndw", "00000000-0000-0000-BE05-120DD9DD4A45", 0, 1518407232, null, 1518407232, null, "{ }", "Chelsea", "POINT (145.11623100000008 -38.05239499999999)", "Dot Matrix", "No", "No" ]
+, [ "row-3rye_yy6d_mjeg", "00000000-0000-0000-5F87-E9E9B00B3DC3", 0, 1518407232, null, 1518407232, null, "{ }", "Cheltenham", "POINT (145.05477200000007 -37.966943999999955)", "Dot Matrix", "No", "No" ]
+, [ "row-pydr-9h25-tiap", "00000000-0000-0000-7ED7-4655383F8694", 0, 1518407232, null, 1518407232, null, "{ }", "Clayton", "POINT (145.12056700000005 -37.92470199999997)", "LCD", "No", "No" ]
+, [ "row-7mh8-m8vu-myyk", "00000000-0000-0000-9B5D-DB41C926FF5B", 0, 1518407232, null, 1518407232, null, "{ }", "Clifton Hill", "POINT (144.995495 -37.78822399999996)", "Dot Matrix", "No", "No" ]
+, [ "row-eqw9-7ni2.m875", "00000000-0000-0000-17AE-83B79E57CCBC", 0, 1518407232, null, 1518407232, null, "{ }", "Coburg", "POINT (144.963347 -37.742411000000004)", "Dot Matrix", "No", "No" ]
+, [ "row-g7cm.9eug~q56k", "00000000-0000-0000-0294-1D15F212D23A", 0, 1518407232, null, 1518407232, null, "{ }", "Collingwood", "POINT (144.993743 -37.80454299999997)", "No", "No", "No" ]
+, [ "row-vzup.aevm~w2x6", "00000000-0000-0000-1503-8E245470C5DD", 0, 1518407232, null, 1518407232, null, "{ }", "Craigieburn", "POINT (144.94301200000007 -37.602716999999984)", "Dot Matrix", "Yes", "No" ]
+, [ "row-e85b_m9c7.j6ej", "00000000-0000-0000-9AC2-5261369CB681", 0, 1518407232, null, 1518407232, null, "{ }", "Cranbourne", "POINT (145.28000700000007 -38.099177)", "Dot Matrix", "No", "No" ]
+, [ "row-2p4e~vzxu.x3t3", "00000000-0000-0000-0FA1-D153A9990D10", 0, 1518407232, null, 1518407232, null, "{ }", "Crib Point", "POINT (145.20423600000004 -38.36620499999998)", "No", "No", "No" ]
+, [ "row-2krx-akrx-nsbi", "00000000-0000-0000-CE1F-E4AACB55EF7D", 0, 1518407232, null, 1518407232, null, "{ }", "Croxton", "POINT (144.99709900000005 -37.76385399999998)", "LCD", "No", "No" ]
+, [ "row-jmmh-xeje~jxyf", "00000000-0000-0000-FA03-E92F5B3C56A6", 0, 1518407232, null, 1518407232, null, "{ }", "Croydon", "POINT (145.27988400000004 -37.79575399999999)", "Dot Matrix", "No", "No" ]
+, [ "row-uzbf~f9th_hv7c", "00000000-0000-0000-5E3B-F215D5ACA389", 0, 1518407232, null, 1518407232, null, "{ }", "Dandenong", "POINT (145.20963900000004 -37.989934000000005)", "Dot Matrix", "No", "Yes" ]
+, [ "row-2ts3~4f9f-4kgr", "00000000-0000-0000-9CFC-9465D29EC059", 0, 1518407232, null, 1518407232, null, "{ }", "Darebin", "POINT (145.03862200000003 -37.77481599999999)", "No", "No", "No" ]
+, [ "row-yy6d-rea6-twr3", "00000000-0000-0000-72BA-57761D938D9E", 0, 1518407232, null, 1518407232, null, "{ }", "Darling", "POINT (145.06267300000002 -37.868682999999976)", "Dot Matrix", "No", "No" ]
+, [ "row-r32z.5vj7-htr4", "00000000-0000-0000-F1E0-E8C9FEC8C102", 0, 1518407232, null, 1518407232, null, "{ }", "Dennis", "POINT (145.00824 -37.77918299999999)", "LCD", "No", "No" ]
+, [ "row-956c~gngz~j47s", "00000000-0000-0000-7576-B1EACF85B1E4", 0, 1518407232, null, 1518407232, null, "{ }", "Diamond Creek", "POINT (145.15873800000008 -37.67332899999997)", "No", "No", "No" ]
+, [ "row-nc3g.5huk_wegv", "00000000-0000-0000-E9F0-9D4D0C9952E9", 0, 1518407232, null, 1518407232, null, "{ }", "Diggers Rest", "POINT (144.71997900000008 -37.62774299999995)", "Dot Matrix", "No", "No" ]
+, [ "row-ezsa-tzpb.xrrh", "00000000-0000-0000-6842-25F5DD07EEC9", 0, 1518407232, null, 1518407232, null, "{ }", "Eaglemont", "POINT (145.05370300000004 -37.76377099999996)", "No", "No", "No" ]
+, [ "row-7ptu.kzwz~7y9t", "00000000-0000-0000-6734-49350BFB5C60", 0, 1518407232, null, 1518407232, null, "{ }", "East Camberwell", "POINT (145.06832400000008 -37.825759000000005)", "No", "No", "No" ]
+, [ "row-8jr3.kni9~5pwr", "00000000-0000-0000-0661-76431869AEEA", 0, 1518407232, null, 1518407232, null, "{ }", "East Malvern", "POINT (145.06928500000004 -37.877025)", "No", "No", "No" ]
+, [ "row-2i53.vnpq-sdc5", "00000000-0000-0000-69C5-7B942437E42F", 0, 1518407232, null, 1518407232, null, "{ }", "East Richmond", "POINT (144.997254 -37.82646599999998)", "Dot Matrix", "No", "No" ]
+, [ "row-jrda~mg6t~szx8", "00000000-0000-0000-1E7C-CBE1EAD9C773", 0, 1518407232, null, 1518407232, null, "{ }", "Edithvale", "POINT (145.10852699999998 -38.03813299999996)", "Dot Matrix", "No", "No" ]
+, [ "row-yr7h-9skv-xy9y", "00000000-0000-0000-6D0E-B17EE2448979", 0, 1518407232, null, 1518407232, null, "{ }", "Elsternwick", "POINT (145.00097300000004 -37.88484799999998)", "Dot Matrix", "No", "No" ]
+, [ "row-ni8r_bp97-murq", "00000000-0000-0000-A1AF-F3348AADE531", 0, 1518407232, null, 1518407232, null, "{ }", "Eltham", "POINT (145.14772600000003 -37.713438)", "Dot Matrix", "No", "No" ]
+, [ "row-wc6x~i93i_ed33", "00000000-0000-0000-180C-6205A4B73CF3", 0, 1518407232, null, 1518407232, null, "{ }", "Epping", "POINT (145.02860700000008 -37.65301699999998)", "Dot Matrix", "Yes", "Yes" ]
+, [ "row-xpgu_4p98~94pc", "00000000-0000-0000-99D0-4812C0F86397", 0, 1518407232, null, 1518407232, null, "{ }", "Essendon", "POINT (144.916198 -37.75600799999995)", "Dot Matrix", "No", "No" ]
+, [ "row-jn6n.rsyt~swpz", "00000000-0000-0000-F1F6-C6F8FC9CFFF3", 0, 1518407232, null, 1518407232, null, "{ }", "Fairfield", "POINT (145.016801 -37.77918599999998)", "Dot Matrix", "No", "No" ]
+, [ "row-sdum-bcb6_nr6h", "00000000-0000-0000-9F31-F037A51A83C0", 0, 1518407232, null, 1518407232, null, "{ }", "Fawkner", "POINT (144.96055 -37.71468199999998)", "No", "No", "No" ]
+, [ "row-uazt_t2qd~xv2x", "00000000-0000-0000-2BC6-79B1BA81FC1C", 0, 1518407232, null, 1518407232, null, "{ }", "Ferntree Gully", "POINT (145.29517099999998 -37.88159299999995)", "Dot Matrix", "No", "No" ]
+, [ "row-fve2~zdt9~swzc", "00000000-0000-0000-BB66-BC192713A09E", 0, 1518407232, null, 1518407232, null, "{ }", "Flagstaff", "POINT (144.95644700000003 -37.811826999999994)", "LCD", "Yes", "Yes" ]
+, [ "row-96gg~xtuz.u5pg", "00000000-0000-0000-DEB3-A4D93CA77350", 0, 1518407232, null, 1518407232, null, "{ }", "Flemington Bridge", "POINT (144.93932200000006 -37.78813699999995)", "No", "No", "No" ]
+, [ "row-wug2.36dp-j7hs", "00000000-0000-0000-9B66-BD3A00341667", 0, 1518407232, null, 1518407232, null, "{ }", "Flinders Street", "POINT (144.966997 -37.81832099999997)", "LCD", "Plat 1 only", "Yes" ]
+, [ "row-9zvm~adj3-v2hz", "00000000-0000-0000-4CC7-912D1C487405", 0, 1518407232, null, 1518407232, null, "{ }", "Footscray", "POINT (144.902378 -37.801694999999995)", "Dot Matrix", "Yes", "Yes" ]
+, [ "row-6fuy-wikb_3dwa", "00000000-0000-0000-E2F2-5FCADBC2DD2C", 0, 1518407232, null, 1518407232, null, "{ }", "Frankston", "POINT (145.12601000000006 -38.14326399999999)", "Dot Matrix", "No", "No" ]
+, [ "row-y4c3-g8ss.eyqc", "00000000-0000-0000-5676-F8769551FB40", 0, 1518407232, null, 1518407232, null, "{ }", "Gardenvale", "POINT (145.00426900000002 -37.89614799999998)", "No", "No", "No" ]
+, [ "row-47ze_bzhe_4dsb", "00000000-0000-0000-F744-133161FA644E", 0, 1518407232, null, 1518407232, null, "{ }", "Gardiner", "POINT (145.05162400000006 -37.853275999999994)", "LCD", "Yes", "Yes" ]
+, [ "row-a2ef~be37-unag", "00000000-0000-0000-E61E-3FD5AF1BE48B", 0, 1518407232, null, 1518407232, null, "{ }", "Ginifer", "POINT (144.80964300000005 -37.75758099999996)", "LCD", "Yes", "Yes" ]
+, [ "row-ibaw_pb4b.rb37", "00000000-0000-0000-B4E8-0151E798EDF9", 0, 1518407232, null, 1518407232, null, "{ }", "Glen Iris", "POINT (145.058223 -37.859307)", "Dot Matrix", "No", "No" ]
+, [ "row-brsd.dfaw.ab5x", "00000000-0000-0000-BFE3-EB0FE06EDAC9", 0, 1518407232, null, 1518407232, null, "{ }", "Glen Waverley", "POINT (145.1630590000001 -37.87978499999997)", "Dot Matrix", "No", "No" ]
+, [ "row-ed2k-gqf2-qtwa", "00000000-0000-0000-E56D-4AA52AC044D9", 0, 1518407232, null, 1518407232, null, "{ }", "Glenbervie", "POINT (144.920932 -37.747187)", "No", "No", "No" ]
+, [ "row-ixww~dk6d~2un6", "00000000-0000-0000-FDAA-687C6AB5B54B", 0, 1518407232, null, 1518407232, null, "{ }", "Glenferrie", "POINT (145.0364380000001 -37.82146599999999)", "Dot Matrix", "No", "No" ]
+, [ "row-6yjt~hyfu_83jd", "00000000-0000-0000-DFC3-A98D805C2053", 0, 1518407232, null, 1518407232, null, "{ }", "Glenhuntly", "POINT (145.04222000000004 -37.88912799999997)", "Dot Matrix", "No", "No" ]
+, [ "row-sta5-4ka5.2q2f", "00000000-0000-0000-4009-F5C68444B14F", 0, 1518407232, null, 1518407232, null, "{ }", "Glenroy", "POINT (144.91724599999998 -37.704638999999986)", "Dot Matrix", "No", "No" ]
+, [ "row-xmmm_ecwc.pb7j", "00000000-0000-0000-C943-520682FF4F2E", 0, 1518407232, null, 1518407232, null, "{ }", "Gowrie", "POINT (144.95887900000002 -37.700751999999966)", "Dot Matrix", "No", "No" ]
+, [ "row-ntig-2y3x-rwm8", "00000000-0000-0000-A15E-BFE370FA7525", 0, 1518407232, null, 1518407232, null, "{ }", "Greensborough", "POINT (145.108164 -37.703981999999996)", "Dot Matrix", "No", "No" ]
+, [ "row-usq3.s9y8.7w5w", "00000000-0000-0000-08AA-858504424906", 0, 1518407232, null, 1518407232, null, "{ }", "Hallam", "POINT (145.269773 -38.01774399999999)", "No", "No", "No" ]
+, [ "row-a678_6ygm-qfph", "00000000-0000-0000-D2F6-C88CC0B43315", 0, 1518407232, null, 1518407232, null, "{ }", "Hampton", "POINT (145.001216 -37.93787599999996)", "No", "No", "No" ]
+, [ "row-h6tr-gvbb.xxu3", "00000000-0000-0000-E335-9678350D844C", 0, 1518407232, null, 1518407232, null, "{ }", "Hartwell", "POINT (145.07541700000002 -37.843763999999965)", "Dot Matrix", "No", "No" ]
+, [ "row-svfc_wpwq.9ugs", "00000000-0000-0000-D7E2-D0B1E456ECF4", 0, 1518407232, null, 1518407232, null, "{ }", "Hastings", "POINT (145.18598400000008 -38.305454)", "No", "No", "No" ]
+, [ "row-963c~fic2_4ecv", "00000000-0000-0000-399E-626C68DD173E", 0, 1518407232, null, 1518407232, null, "{ }", "Hawksburn", "POINT (145.00209500000005 -37.844667999999956)", "Dot Matrix", "No", "No" ]
+, [ "row-p2cv_w2bh.e6ay", "00000000-0000-0000-3127-EF0C3395833F", 0, 1518407232, null, 1518407232, null, "{ }", "Hawthorn", "POINT (145.02308800000003 -37.821838999999954)", "Dot Matrix", "No", "No" ]
+, [ "row-dcu5.4i4q.8xcx", "00000000-0000-0000-B6D5-C9E4D7711954", 0, 1518407232, null, 1518407232, null, "{ }", "Heatherdale", "POINT (145.21189500000003 -37.818922999999984)", "LCD", "Yes", "Yes" ]
+, [ "row-ryjy.vd2j-8jqb", "00000000-0000-0000-6129-C88087A5BF80", 0, 1518407232, null, 1518407232, null, "{ }", "Heathmont", "POINT (145.24430600000005 -37.827849999999955)", "Dot Matrix", "No", "No" ]
+, [ "row-4i9u-9g67-kj6c", "00000000-0000-0000-4A64-2C9E8B35086A", 0, 1518407232, null, 1518407232, null, "{ }", "Heidelberg", "POINT (145.060927 -37.75714899999997)", "Dot Matrix", "No", "No" ]
+, [ "row-de58.4uv2.d49d", "00000000-0000-0000-16E3-3947FDEE0D87", 0, 1518407232, null, 1518407232, null, "{ }", "Heyington", "POINT (145.02263400000004 -37.83466999999996)", "No", "No", "No" ]
+, [ "row-qq9w_7fhx.ceez", "00000000-0000-0000-277C-636CFD4D2190", 0, 1518407232, null, 1518407232, null, "{ }", "Highett", "POINT (145.04163400000004 -37.948095999999964)", "Dot Matrix", "No", "No" ]
+, [ "row-xmna~qycx~jqze", "00000000-0000-0000-DCAE-ECEEDBCECEC3", 0, 1518407232, null, 1518407232, null, "{ }", "Holmesglen", "POINT (145.091183 -37.874292999999966)", "Dot Matrix", "No", "No" ]
+, [ "row-2zzs~tz6g_xuh5", "00000000-0000-0000-DBE2-5576BD012181", 0, 1518407232, null, 1518407232, null, "{ }", "Hoppers Crossing", "POINT (144.70104700000002 -37.88326999999998)", "Dot Matrix", "No", "No" ]
+, [ "row-jwbq_sijc.ijyt", "00000000-0000-0000-1635-9E543B9C0E0C", 0, 1518407232, null, 1518407232, null, "{ }", "Hughesdale", "POINT (145.0776400000001 -37.89487699999995)", "No", "No", "No" ]
+, [ "row-ner6~n4xk-ykf6", "00000000-0000-0000-43AC-BE574D2DE7FF", 0, 1518407232, null, 1518407232, null, "{ }", "Huntingdale", "POINT (145.102398 -37.91099299999996)", "Dot Matrix", "No", "No" ]
+, [ "row-2kvb~88a6-ie7k", "00000000-0000-0000-1377-94219F6132AF", 0, 1518407232, null, 1518407232, null, "{ }", "Hurstbridge", "POINT (145.19208100000003 -37.639453)", "Dot Matrix", "No", "No" ]
+, [ "row-dipe-wh5r.i6f6", "00000000-0000-0000-55A3-102928DF1851", 0, 1518407232, null, 1518407232, null, "{ }", "Ivanhoe", "POINT (145.045391 -37.76892699999996)", "Dot Matrix", "No", "No" ]
+, [ "row-9txq~fytb-kicq", "00000000-0000-0000-40D7-B0A81A042491", 0, 1518407232, null, 1518407232, null, "{ }", "Jacana", "POINT (144.91585600000008 -37.695133)", "No", "No", "No" ]
+, [ "row-a53z-tkqf_3sht", "00000000-0000-0000-365B-C6442E174C05", 0, 1518407232, null, 1518407232, null, "{ }", "Jewell", "POINT (144.958749 -37.77484999999996)", "No", "No", "No" ]
+, [ "row-wrsp~bafd_547e", "00000000-0000-0000-7772-FC422CEACB78", 0, 1518407232, null, 1518407232, null, "{ }", "Jolimont", "POINT (144.983878 -37.81649999999996)", "Dot Matrix", "No", "No" ]
+, [ "row-j5rg.ygcv_aqj2", "00000000-0000-0000-7019-263CE132886B", 0, 1518407232, null, 1518407232, null, "{ }", "Jordanville", "POINT (145.11208900000008 -37.873598999999956)", "No", "No", "No" ]
+, [ "row-7yen-y3z4.ez8c", "00000000-0000-0000-60DA-33DA725739EB", 0, 1518407232, null, 1518407232, null, "{ }", "Kananook", "POINT (145.13550400000008 -38.121421)", "Dot Matrix", "No", "No" ]
+, [ "row-zhad_gnb4~ar47", "00000000-0000-0000-3B97-20F8CC682AFB", 0, 1518407232, null, 1518407232, null, "{ }", "Kensington", "POINT (144.93046700000002 -37.79348599999997)", "No", "No", "No" ]
+, [ "row-ufrv_jqif.p6xh", "00000000-0000-0000-84F3-31726AFCA264", 0, 1518407232, null, 1518407232, null, "{ }", "Keon Park", "POINT (145.011937 -37.694511999999975)", "Dot Matrix", "No", "No" ]
+, [ "row-s6tg_h5yh.qz4c", "00000000-0000-0000-C9BF-3586DA9F9332", 0, 1518407232, null, 1518407232, null, "{ }", "Kooyong", "POINT (145.03312100000005 -37.83982099999997)", "LCD", "No", "No" ]
+, [ "row-jezb-s5gz~gpds", "00000000-0000-0000-38A0-FAB4F3B37296", 0, 1518407232, null, 1518407232, null, "{ }", "Laburnum", "POINT (145.14050200000008 -37.82091499999996)", "No", "No", "No" ]
+, [ "row-a7zy~8zka.hiry", "00000000-0000-0000-E06F-50F4E641E423", 0, 1518407232, null, 1518407232, null, "{ }", "Lalor", "POINT (145.01740800000005 -37.66541599999999)", "Dot Matrix", "No", "No" ]
+, [ "row-smnj~r5ec-dsgh", "00000000-0000-0000-5B7A-704D4F97A022", 0, 1518407232, null, 1518407232, null, "{ }", "Laverton", "POINT (144.7726150000001 -37.86369399999995)", "Dot Matrix", "No", "Yes" ]
+, [ "row-y6pq~a7ds~n8yj", "00000000-0000-0000-CED7-6D015301B9C5", 0, 1518407232, null, 1518407232, null, "{ }", "Leawarra", "POINT (145.13889200000006 -38.15180499999997)", "No", "No", "No" ]
+, [ "row-w2ef-y7fx~9dz5", "00000000-0000-0000-3724-117CC6CC4535", 0, 1518407232, null, 1518407232, null, "{ }", "Lilydale", "POINT (145.34823100000006 -37.755019000000004)", "Dot Matrix", "No", "No" ]
+, [ "row-n4z6.tkex_7r3u", "00000000-0000-0000-F895-D878F3851138", 0, 1518407232, null, 1518407232, null, "{ }", "Macaulay", "POINT (144.93611299999998 -37.79457599999995)", "No", "No", "No" ]
+, [ "row-swsp.htqs.ywuk", "00000000-0000-0000-80C2-FA3A11EE936A", 0, 1518407232, null, 1518407232, null, "{ }", "Macleod", "POINT (145.06910700000003 -37.726291)", "Dot Matrix", "No", "No" ]
+, [ "row-vj7u_xpg3.m2c4", "00000000-0000-0000-6867-7289341070EE", 0, 1518407232, null, 1518407232, null, "{ }", "Malvern", "POINT (145.02929400000005 -37.86624999999998)", "Dot Matrix", "No", "No" ]
+, [ "row-tyfk~q7h5.kivw", "00000000-0000-0000-D05D-9B9E2AFC0F01", 0, 1518407232, null, 1518407232, null, "{ }", "Mckinnon", "POINT (145.03822300000002 -37.91071299999999)", "LCD", "Yes", "Yes" ]
+, [ "row-zqbj.bmiy_u4bn", "00000000-0000-0000-F624-1190B4187B16", 0, 1518407232, null, 1518407232, null, "{ }", "Melbourne Central", "POINT (144.963757 -37.809699999999964)", "LCD", "Yes", "Yes" ]
+, [ "row-v7rz.g5p3.mef5", "00000000-0000-0000-D449-3530990FCD0D", 0, 1518407232, null, 1518407232, null, "{ }", "Mentone", "POINT (145.06524000000002 -37.98197499999998)", "Dot Matrix", "No", "No" ]
+, [ "row-zf7e-ht9g_p3r5", "00000000-0000-0000-0CA6-3C90E2F33625", 0, 1518407232, null, 1518407232, null, "{ }", "Merinda Park", "POINT (145.26349100000004 -38.07900999999998)", "Dot Matrix", "No", "No" ]
+, [ "row-b2dt.cqpi~h6w8", "00000000-0000-0000-4367-3F95A31DDFE0", 0, 1518407232, null, 1518407232, null, "{ }", "Merlynston", "POINT (144.96131200000002 -37.72093699999999)", "No", "No", "No" ]
+, [ "row-yh55_6ypi-ecf3", "00000000-0000-0000-3FC0-BB84A3B991A0", 0, 1518407232, null, 1518407232, null, "{ }", "Merri", "POINT (144.99299600000006 -37.77777299999997)", "No", "No", "No" ]
+, [ "row-v9q2_q9rc-4b7p", "00000000-0000-0000-CE6E-9E63C8ADC0C8", 0, 1518407232, null, 1518407232, null, "{ }", "Middle Brighton", "POINT (144.99629900000002 -37.915134999999964)", "No", "No", "No" ]
+, [ "row-q7pb-ghn4-mchd", "00000000-0000-0000-83F1-3FABE54861C2", 0, 1518407232, null, 1518407232, null, "{ }", "Middle Footscray", "POINT (144.8913100000001 -37.802505999999994)", "No", "No", "No" ]
+, [ "row-rntf.7374~ct2r", "00000000-0000-0000-4B58-9AC256D45B2D", 0, 1518407232, null, 1518407232, null, "{ }", "Mitcham", "POINT (145.19228099999998 -37.81797799999998)", "Dot Matrix", "Yes", "Yes" ]
+, [ "row-mjaj-gj8r-ck4m", "00000000-0000-0000-5FB6-A63125379A6E", 0, 1518407232, null, 1518407232, null, "{ }", "Mont Albert", "POINT (145.10556000000008 -37.819541999999956)", "No", "No", "No" ]
+, [ "row-x3hu_9p5e.4c2t", "00000000-0000-0000-F48A-7134DC8938B7", 0, 1518407232, null, 1518407232, null, "{ }", "Montmorency", "POINT (145.12151100000005 -37.715296999999964)", "No", "No", "No" ]
+, [ "row-rvzs.xgti.yaxm", "00000000-0000-0000-D438-294B65D5B17D", 0, 1518407232, null, 1518407232, null, "{ }", "Moonee Ponds", "POINT (144.91920200000004 -37.76581299999998)", "Dot Matrix", "No", "No" ]
+, [ "row-wenx_e4ty_w4dz", "00000000-0000-0000-F615-724F23636B8B", 0, 1518407232, null, 1518407232, null, "{ }", "Moorabbin", "POINT (145.03668300000004 -37.93482)", "Dot Matrix", "No", "No" ]
+, [ "row-c85y.ieky-vd7x", "00000000-0000-0000-CA3D-A7529AB9FAB6", 0, 1518407232, null, 1518407232, null, "{ }", "Mooroolbark", "POINT (145.31283600000006 -37.78473599999995)", "Dot Matrix", "No", "No" ]
+, [ "row-z4tg_8bw2_te5k", "00000000-0000-0000-3BC7-95A1745DAFC7", 0, 1518407232, null, 1518407232, null, "{ }", "Mordialloc", "POINT (145.08755400000007 -38.006508)", "Dot Matrix", "No", "No" ]
+, [ "row-iq5b_ti3g.7miw", "00000000-0000-0000-6FED-3C486834DF6A", 0, 1518407232, null, 1518407232, null, "{ }", "Moreland", "POINT (144.96184800000003 -37.75434199999995)", "No", "No", "No" ]
+, [ "row-7rta.i972.hqh7", "00000000-0000-0000-08C0-7DDCB14964F6", 0, 1518407232, null, 1518407232, null, "{ }", "Morradoo", "POINT (145.18949900000007 -38.353931999999986)", "No", "No", "No" ]
+, [ "row-j6tu_vyk7_vspg", "00000000-0000-0000-346A-C3AC56EBA901", 0, 1518407232, null, 1518407232, null, "{ }", "Mount Waverley", "POINT (145.12841300000002 -37.87527399999999)", "No", "No", "No" ]
+, [ "row-f8ve~x3r9_a376", "00000000-0000-0000-9032-755169E500FF", 0, 1518407232, null, 1518407232, null, "{ }", "Murrumbeena", "POINT (145.06733200000008 -37.890266)", "No", "No", "No" ]
+, [ "row-qs5k.tugr_99wk", "00000000-0000-0000-0F3E-D49EBF4373FE", 0, 1518407232, null, 1518407232, null, "{ }", "Narre Warren", "POINT (145.30360600000006 -38.02764099999996)", "No", "No", "No" ]
+, [ "row-kjn7_dtdv.chm8", "00000000-0000-0000-E721-5B730C2B3F90", 0, 1518407232, null, 1518407232, null, "{ }", "Watergardens", "POINT (144.77386 -37.700717)", "Dot Matrix", "No", "Yes" ]
+, [ "row-itgy-c2vg~pyjh", "00000000-0000-0000-A1A0-CE51CD74982C", 0, 1518407232, null, 1518407232, null, "{ }", "Newmarket", "POINT (144.92888600000003 -37.78690499999999)", "No", "No", "No" ]
+, [ "row-iedw-ze8c~wj4p", "00000000-0000-0000-D91C-4D401770EB45", 0, 1518407232, null, 1518407232, null, "{ }", "Newport", "POINT (144.883604 -37.84271899999999)", "LCD", "No", "No" ]
+, [ "row-ejus.hqz3.7bkv", "00000000-0000-0000-FD64-5E1FD07392AE", 0, 1518407232, null, 1518407232, null, "{ }", "Noble Park", "POINT (145.17693600000007 -37.96723599999996)", "Dot Matrix", "No", "No" ]
+, [ "row-mbyh.6pgt-dx2t", "00000000-0000-0000-1B4D-628E38B68EB5", 0, 1518407232, null, 1518407232, null, "{ }", "North Brighton", "POINT (145.00259500000004 -37.90491599999996)", "No", "No", "No" ]
+, [ "row-pwmv~tbbx-nc24", "00000000-0000-0000-E2C9-1F7BB220757C", 0, 1518407232, null, 1518407232, null, "{ }", "North Melbourne", "POINT (144.94183099999998 -37.806735)", "LCD", "No", "Yes" ]
+, [ "row-vd3n.9np4.dk9w", "00000000-0000-0000-A88E-D3392A389627", 0, 1518407232, null, 1518407232, null, "{ }", "North Richmond", "POINT (144.99255600000004 -37.81007599999998)", "Dot Matrix", "No", "No" ]
+, [ "row-cjbt_ejdy~g7uv", "00000000-0000-0000-E093-286F383A36A5", 0, 1518407232, null, 1518407232, null, "{ }", "North Williamstown", "POINT (144.88875700000006 -37.85668099999998)", "LCD", "No", "No" ]
+, [ "row-hr3d.b4iq~xjcz", "00000000-0000-0000-C2C9-674DE99C3E75", 0, 1518407232, null, 1518407232, null, "{ }", "Northcote", "POINT (144.9952820000001 -37.76986499999998)", "Dot Matrix", "No", "No" ]
+, [ "row-x58v_six9.r3s5", "00000000-0000-0000-0FAC-C753E645D28F", 0, 1518407232, null, 1518407232, null, "{ }", "Nunawading", "POINT (145.174174 -37.820719999999994)", "Dot Matrix", "Yes", "Yes" ]
+, [ "row-b9yv_nkgm-nppx", "00000000-0000-0000-8F30-B1D3BA165E32", 0, 1518407232, null, 1518407232, null, "{ }", "Oak Park", "POINT (144.92153500000006 -37.718046999999956)", "No", "No", "No" ]
+, [ "row-cvdy-cmks.cu2x", "00000000-0000-0000-D23F-0946F4EF01C7", 0, 1518407232, null, 1518407232, null, "{ }", "Oakleigh", "POINT (145.08831400000008 -37.900368999999955)", "Dot Matrix", "No", "No" ]
+, [ "row-7gdh_y3hh~fgy9", "00000000-0000-0000-14A1-314A16D9E36A", 0, 1518407232, null, 1518407232, null, "{ }", "Officer", "POINT (145.41099300000008 -38.066142999999954)", "No", "No", "No" ]
+, [ "row-e57j_6mqt~bc88", "00000000-0000-0000-9170-1C215053465A", 0, 1518407232, null, 1518407232, null, "{ }", "Ormond", "POINT (145.039531 -37.903606999999965)", "LCD", "Yes", "Yes" ]
+, [ "row-qfz7-qtcc~5xia", "00000000-0000-0000-1B71-1036B4FFEEF7", 0, 1518407232, null, 1518407232, null, "{ }", "Pakenham", "POINT (145.48651100000006 -38.080547999999965)", "Dot Matrix", "No", "No" ]
+, [ "row-2ene.m5ea_zs68", "00000000-0000-0000-5E7B-F87ACFE16F6E", 0, 1518407232, null, 1518407232, null, "{ }", "Parkdale", "POINT (145.07629600000007 -37.99306999999999)", "Dot Matrix", "No", "No" ]
+, [ "row-35yz~gkxg.3npr", "00000000-0000-0000-92D7-E28BEFA4C52A", 0, 1518407232, null, 1518407232, null, "{ }", "Parliament", "POINT (144.97340800000006 -37.811928999999964)", "LCD", "Yes", "Yes" ]
+, [ "row-4zsg.jd7v-rer4", "00000000-0000-0000-6889-B29BE88B5821", 0, 1518407232, null, 1518407232, null, "{ }", "Pascoe Vale", "POINT (144.92819500000007 -37.73075499999999)", "No", "No", "No" ]
+, [ "row-6r59_xuuu-uvh8", "00000000-0000-0000-5877-5600827DFD7F", 0, 1518407232, null, 1518407232, null, "{ }", "Patterson", "POINT (145.03546100000005 -37.92550499999999)", "Dot Matrix", "No", "No" ]
+, [ "row-bugu-qiig-tuws", "00000000-0000-0000-A95C-DD06E9FDD623", 0, 1518407232, null, 1518407232, null, "{ }", "Prahran", "POINT (144.98981700000002 -37.849762999999996)", "Dot Matrix", "No", "No" ]
+, [ "row-2cj7_cnq3-cp5e", "00000000-0000-0000-BB7A-1A3EFAAED32F", 0, 1518407232, null, 1518407232, null, "{ }", "Preston", "POINT (145.00051600000006 -37.73873599999996)", "Dot Matrix", "No", "No" ]
+, [ "row-a7m5_wdfk_744a", "00000000-0000-0000-76F5-77853584ABA3", 0, 1518407232, null, 1518407232, null, "{ }", "Keilor Plains", "POINT (144.79381 -37.729602)", "Dot Matrix", "No", "No" ]
+, [ "row-mpmp~s4j7~qrbd", "00000000-0000-0000-4702-953E09F76F9D", 0, 1518407232, null, 1518407232, null, "{ }", "Regent", "POINT (145.00273200000004 -37.728602999999964)", "Dot Matrix", "No", "No" ]
+, [ "row-zvak_7y7s_8h45", "00000000-0000-0000-B4A3-6C5811C48271", 0, 1518407232, null, 1518407232, null, "{ }", "Reservoir", "POINT (145.00691900000004 -37.71701399999995)", "Dot Matrix", "No", "No" ]
+, [ "row-2bjs_u93f_ducz", "00000000-0000-0000-B233-8D46D176425F", 0, 1518407232, null, 1518407232, null, "{ }", "Richmond", "POINT (144.98957400000006 -37.82396299999999)", "LCD", "No", "No" ]
+, [ "row-3b6x.5cwt_rv97", "00000000-0000-0000-2E4D-8D06560119BD", 0, 1518407232, null, 1518407232, null, "{ }", "Ringwood", "POINT (145.22881600000005 -37.815968999999996)", "Dot Matrix", "Yes", "Yes" ]
+, [ "row-prha_6v4c.i453", "00000000-0000-0000-3760-1E0210C2ACD9", 0, 1518407232, null, 1518407232, null, "{ }", "Ringwood East", "POINT (145.24969 -37.81199499999997)", "No", "No", "No" ]
+, [ "row-cmd6-cg43.i5yj", "00000000-0000-0000-47CE-8F8FB51CE1EA", 0, 1518407232, null, 1518407232, null, "{ }", "Ripponlea", "POINT (144.995226 -37.875923)", "Dot Matrix", "No", "No" ]
+, [ "row-68k7~ykrv-bxtd", "00000000-0000-0000-05E7-70AE0376ABBC", 0, 1518407232, null, 1518407232, null, "{ }", "Riversdale", "POINT (145.069614 -37.83172399999995)", "Dot Matrix", "No", "No" ]
+, [ "row-95rq-2a34~j88z", "00000000-0000-0000-E98F-9820500C0818", 0, 1518407232, null, 1518407232, null, "{ }", "Rosanna", "POINT (145.06611900000007 -37.74287199999998)", "Dot Matrix", "No", "No" ]
+, [ "row-prre.b6np.t3gv", "00000000-0000-0000-8F50-F4BAEE755E44", 0, 1518407232, null, 1518407232, null, "{ }", "Royal Park", "POINT (144.951868 -37.781183)", "No", "No", "No" ]
+, [ "row-uzaa.jrgg~p2t9", "00000000-0000-0000-2885-A4EBF1A46B10", 0, 1518407232, null, 1518407232, null, "{ }", "Rushall", "POINT (144.99241300000006 -37.78318299999995)", "No", "No", "No" ]
+, [ "row-zt5p-zu5j-bqsv", "00000000-0000-0000-5A11-57C048802A7A", 0, 1518407232, null, 1518407232, null, "{ }", "Ruthven", "POINT (145.00935800000002 -37.70828899999998)", "No", "No", "No" ]
+, [ "row-aqtn-kxwe-5idw", "00000000-0000-0000-006E-6CDC68FD1B6E", 0, 1518407232, null, 1518407232, null, "{ }", "Sandown Park", "POINT (145.163 -37.95669399999997)", "No", "No", "No" ]
+, [ "row-93kq~29kd_g49g", "00000000-0000-0000-9077-DD7DAC3FFFF1", 0, 1518407232, null, 1518407232, null, "{ }", "Sandringham", "POINT (145.004588 -37.950256999999965)", "Dot Matrix", "No", "No" ]
+, [ "row-kry9_mzif-qu3f", "00000000-0000-0000-9D89-CD67BA6E5496", 0, 1518407232, null, 1518407232, null, "{ }", "Seaford", "POINT (145.12823300000002 -38.10435799999999)", "Dot Matrix", "No", "No" ]
+, [ "row-n7ez.tzu9.8qum", "00000000-0000-0000-67F4-0863348BC21A", 0, 1518407232, null, 1518407232, null, "{ }", "Seaholme", "POINT (144.840958 -37.86784299999999)", "LCD", "No", "No" ]
+, [ "row-wfab_d23s~fbvf", "00000000-0000-0000-69BC-68D01B243ACA", 0, 1518407232, null, 1518407232, null, "{ }", "Seddon", "POINT (144.89604300000008 -37.80859299999997)", "Dot Matrix", "No", "No" ]
+, [ "row-ptfa.c8fk.znyp", "00000000-0000-0000-3F9A-2C0EBC410F19", 0, 1518407232, null, 1518407232, null, "{ }", "Roxburgh Park", "POINT (144.935568 -37.638004999999964)", "Dot Matrix", "Yes", "No" ]
+, [ "row-shpb~36fz.q6c7", "00000000-0000-0000-6530-7DC1E79AD8EF", 0, 1518407232, null, 1518407232, null, "{ }", "Somerville", "POINT (145.17635300000006 -38.225495999999964)", "No", "No", "No" ]
+, [ "row-d8ed.y3z6~pq95", "00000000-0000-0000-D305-2ABF1632051A", 0, 1518407232, null, 1518407232, null, "{ }", "South Kensington", "POINT (144.92532000000006 -37.79958999999997)", "No", "No", "No" ]
+, [ "row-n8e5-ujtr-8ke7", "00000000-0000-0000-DB72-05D02B0FF150", 0, 1518407232, null, 1518407232, null, "{ }", "South Yarra", "POINT (144.992297 -37.83823799999999)", "Dot Matrix", "No", "No" ]
+, [ "row-qrjp_czay_ecw3", "00000000-0000-0000-66B2-870013160C20", 0, 1518407232, null, 1518407232, null, "{ }", "Southern Cross", "POINT (144.95219300000008 -37.818354)", "LCD", "No", "Yes" ]
+, [ "row-ipxs-98t3.re9w", "00000000-0000-0000-4B55-CEECB581AEA7", 0, 1518407232, null, 1518407232, null, "{ }", "Spotswood", "POINT (144.885942 -37.83065099999999)", "No", "No", "No" ]
+, [ "row-9pzr_payn~u7sd", "00000000-0000-0000-CF34-CB63EFE0D9E3", 0, 1518407232, null, 1518407232, null, "{ }", "Springvale", "POINT (145.153507 -37.94937999999996)", "Dot Matrix", "Yes", "Yes" ]
+, [ "row-4rp9~pjnk.ca4u", "00000000-0000-0000-8979-1B3C74A4ADD2", 0, 1518407232, null, 1518407232, null, "{ }", "St Albans", "POINT (144.80007 -37.744872999999984)", "LCD", "Yes", "Yes" ]
+, [ "row-kk67_fnbd-imig", "00000000-0000-0000-8827-33670B638B6E", 0, 1518407232, null, 1518407232, null, "{ }", "Stony Point", "POINT (145.221141 -38.37405199999995)", "No", "No", "No" ]
+, [ "row-eiw9~kznf.9bpb", "00000000-0000-0000-6CF2-70647F720CDB", 0, 1518407232, null, 1518407232, null, "{ }", "Strathmore", "POINT (144.92732 -37.743592999999976)", "No", "No", "No" ]
+, [ "row-kj7r~zdf8_75nw", "00000000-0000-0000-E2C4-E82866F147E1", 0, 1518407232, null, 1518407232, null, "{ }", "Sunbury", "POINT (144.72787700000003 -37.57939099999999)", "Dot Matrix", "No", "No" ]
+, [ "row-pqvz_pxsg_cp7s", "00000000-0000-0000-8E19-69B373AEF3EB", 0, 1518407232, null, 1518407232, null, "{ }", "Sunshine", "POINT (144.83232400000009 -37.78785099999999)", "Dot Matrix", "Yes", "Yes" ]
+, [ "row-f96s_kca7~qxn8", "00000000-0000-0000-C913-244F8305AC7F", 0, 1518407232, null, 1518407232, null, "{ }", "Surrey Hills", "POINT (145.09863900000005 -37.82405399999999)", "Dot Matrix", "No", "No" ]
+, [ "row-e3kx-x5nj-mxwy", "00000000-0000-0000-81E1-482FA249ACCF", 0, 1518407232, null, 1518407232, null, "{ }", "Syndal", "POINT (145.14944400000002 -37.87633099999999)", "Dot Matrix", "No", "No" ]
+, [ "row-5nrz.4v6h_3yfq", "00000000-0000-0000-8587-6E2C1B5DE5E8", 0, 1518407232, null, 1518407232, null, "{ }", "Tecoma", "POINT (145.34316 -37.90822599999996)", "No", "No", "No" ]
+, [ "row-6adc-q8fm_jndg", "00000000-0000-0000-237F-8A3E34DBC951", 0, 1518407232, null, 1518407232, null, "{ }", "Thomastown", "POINT (145.01429400000006 -37.680296)", "Dot Matrix", "Yes", "Yes" ]
+, [ "row-sa63~9ef7_b9m4", "00000000-0000-0000-A6DC-6191F5F16EF0", 0, 1518407232, null, 1518407232, null, "{ }", "Thornbury", "POINT (144.99857600000007 -37.75504799999999)", "Dot Matrix", "No", "No" ]
+, [ "row-2r9x-ev9w.ijbq", "00000000-0000-0000-E557-B876A096906F", 0, 1518407232, null, 1518407232, null, "{ }", "Toorak", "POINT (145.01379300000008 -37.85084699999999)", "Dot Matrix", "No", "No" ]
+, [ "row-gbh5.pqss.w8ea", "00000000-0000-0000-ECB3-4FBFA113BEB2", 0, 1518407232, null, 1518407232, null, "{ }", "Tooronga", "POINT (145.04173400000002 -37.849369999999965)", "No", "No", "No" ]
+, [ "row-fa4p~mjpa~7rq7", "00000000-0000-0000-591E-BF27A0B20A2C", 0, 1518407232, null, 1518407232, null, "{ }", "Tottenham", "POINT (144.86294800000007 -37.79925499999996)", "No", "No", "No" ]
+, [ "row-ixi3.2f3x_bbi5", "00000000-0000-0000-47BC-EBFCAB68E356", 0, 1518407232, null, 1518407232, null, "{ }", "Tyabb", "POINT (145.186512 -38.25996399999997)", "No", "No", "No" ]
+, [ "row-kqix~zy2b~jujr", "00000000-0000-0000-0B14-CFAE7D680B71", 0, 1518407232, null, 1518407232, null, "{ }", "Upfield", "POINT (144.94674500000008 -37.666075999999975)", "Dot Matrix", "No", "No" ]
+, [ "row-pefz-zi38_gahg", "00000000-0000-0000-770B-82802D6FA1BB", 0, 1518407232, null, 1518407232, null, "{ }", "Upper Ferntree Gully", "POINT (145.30747000000008 -37.89264799999995)", "Dot Matrix", "No", "No" ]
+, [ "row-cv7v.sva2~pmez", "00000000-0000-0000-A792-1BFF8F6295A0", 0, 1518407232, null, 1518407232, null, "{ }", "Upwey", "POINT (145.33133500000008 -37.90369199999998)", "No", "No", "No" ]
+, [ "row-xy4y-sg9f~r2fd", "00000000-0000-0000-2B7D-B1F9DEE3F54B", 0, 1518407232, null, 1518407232, null, "{ }", "Victoria Park", "POINT (144.99440700000002 -37.79938099999998)", "Dot Matrix", "No", "No" ]
+, [ "row-d5az~v2i8_23sx", "00000000-0000-0000-44D4-0D38878D18B9", 0, 1518407232, null, 1518407232, null, "{ }", "Watsonia", "POINT (145.083389 -37.71137999999996)", "Dot Matrix", "No", "No" ]
+, [ "row-m6ky~jg93-m6ez", "00000000-0000-0000-6BED-6ADB6E1548A1", 0, 1518407232, null, 1518407232, null, "{ }", "Wattle Glen", "POINT (145.18171400000006 -37.66394199999996)", "No", "No", "No" ]
+, [ "row-nqun-r99j-9d7q", "00000000-0000-0000-1F63-50455BC5A40D", 0, 1518407232, null, 1518407232, null, "{ }", "Werribee", "POINT (144.66091300000005 -37.89951099999996)", "Dot Matrix", "No", "No" ]
+, [ "row-9v8r_uqdr~2u8e", "00000000-0000-0000-264B-2FA2CDE384A2", 0, 1518407232, null, 1518407232, null, "{ }", "West Footscray", "POINT (144.88564800000006 -37.801849000000004)", "Dot Matrix", "Yes", "Yes" ]
+, [ "row-p7hz.ufs9-zi5b", "00000000-0000-0000-FE01-BFE899CFA6C1", 0, 1518407232, null, 1518407232, null, "{ }", "West Richmond", "POINT (144.99169600000005 -37.81445599999995)", "No", "No", "No" ]
+, [ "row-shby~uyb4-tura", "00000000-0000-0000-AB6B-ABCCCCE5D771", 0, 1518407232, null, 1518407232, null, "{ }", "Westall", "POINT (145.1388340000001 -37.938492)", "Dot Matrix", "No", "Yes" ]
+, [ "row-s92d_u69y~8n5w", "00000000-0000-0000-EA2E-29672FF9856D", 0, 1518407232, null, 1518407232, null, "{ }", "Westgarth", "POINT (144.999232 -37.780619)", "LCD", "No", "No" ]
+, [ "row-95v7_99xg_tk6r", "00000000-0000-0000-818E-7E47ABC7473B", 0, 1518407232, null, 1518407232, null, "{ }", "Westona", "POINT (144.8135010000001 -37.86516599999999)", "LCD", "No", "No" ]
+, [ "row-vgga-ect9_gs2u", "00000000-0000-0000-07B6-8631CE4C5B4A", 0, 1518407232, null, 1518407232, null, "{ }", "Williamstown", "POINT (144.90563500000007 -37.86788199999995)", "Dot Matrix", "No", "No" ]
+, [ "row-xmp3.mx5p_8jrh", "00000000-0000-0000-7403-2CE39D2979FA", 0, 1518407232, null, 1518407232, null, "{ }", "Williamstown Beach", "POINT (144.894682 -37.86408399999999)", "No", "No", "No" ]
+, [ "row-f9iy.6hi4~i4tm", "00000000-0000-0000-F5F5-5887107F352C", 0, 1518407232, null, 1518407232, null, "{ }", "Willison", "POINT (145.07014000000004 -37.835487)", "No", "No", "No" ]
+, [ "row-bkr3.8ynk-hrt5", "00000000-0000-0000-A487-5D8EBFE36652", 0, 1518407232, null, 1518407232, null, "{ }", "Windsor", "POINT (144.99173300000007 -37.85582899999997)", "Dot Matrix", "No", "No" ]
+, [ "row-cwef-dueh.gd5a", "00000000-0000-0000-4BBF-632DEBFD88F5", 0, 1518407232, null, 1518407232, null, "{ }", "Yarraman", "POINT (145.19175200000006 -37.97814699999998)", "No", "No", "No" ]
+, [ "row-u2re-zcea.ikrk", "00000000-0000-0000-B30B-DE227466CC74", 0, 1518407232, null, 1518407232, null, "{ }", "Yarraville", "POINT (144.88997500000005 -37.81581299999999)", "LCD", "No", "No" ]
+, [ "row-4tbw~ggmr_cqfe", "00000000-0000-0000-21FB-6D6D5AEB5986", 0, 1518407232, null, 1518407232, null, "{ }", "Coolaroo", "POINT (144.92605300000002 -37.661001)", "Dot Matrix", "Yes", "Yes" ]
+, [ "row-3b4u.7kcb-hi5t", "00000000-0000-0000-8E25-284E93C528BB", 0, 1518407232, null, 1518407232, null, "{ }", "South Morang", "POINT (145.06746800000008 -37.64907599999998)", "Dot Matrix", "Yes", "Yes" ]
+, [ "row-mu2d_888x.axjk", "00000000-0000-0000-EFC9-B06637AB9DF1", 0, 1518407232, null, 1518407232, null, "{ }", "Lynbrook", "POINT (145.24939100000006 -38.057331999999974)", "Dot Matrix", "Yes", "No" ]
+, [ "row-p25n.iq72-4tss", "00000000-0000-0000-7E6E-2DA0BC51CBB5", 0, 1518407232, null, 1518407232, null, "{ }", "Cardinia Road", "POINT (145.438088 -38.071327)", "Dot Matrix", "Yes", "No" ]
+, [ "row-uy58-w43e.h8tx", "00000000-0000-0000-3B7D-B954B271B14F", 0, 1518407232, null, 1518407232, null, "{ }", "Williams Landing", "POINT (144.74719400000004 -37.87009999999998)", "Dot Matrix", "Yes", "Yes" ]
+, [ "row-dz89_sbc9_4tec", "00000000-0000-0000-524B-498D11E9779B", 0, 1518407232, null, 1518407232, null, "{ }", "Aircraft", "POINT (144.760809 -37.866603)", "No", "No", "No" ]
+, [ "row-9tbt-69s5~rckk", "00000000-0000-0000-CE17-DC4C28B6BED4", 0, 1518407232, null, 1518407232, null, "{ }", "Flemington Racecourse", "POINT (144.907196 -37.787585999999976)", "No", "No", "No" ]
+, [ "row-vec9.3dar.x5ag", "00000000-0000-0000-9676-151F78DBD86D", 0, 1518407232, null, 1518407232, null, "{ }", "Showgrounds", "POINT (144.914982 -37.783551999999986)", "No", "No", "No" ]
+, [ "row-r9xf.b2et.djdi", "00000000-0000-0000-93DA-85D4FE3771B6", 0, 1518407232, null, 1518407232, null, "{ }", "Southland", "POINT (145.048673 -37.958177999999975)", "LCD", "Yes", "Yes" ]
+ ]
+}

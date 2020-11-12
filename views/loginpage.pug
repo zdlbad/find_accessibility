@@ -1,0 +1,23 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel="shortcut icon" href="#")
+
+    title Swivel | Login Page
+  body
+    form#loginForm
+      label(for="loginEmail") Email
+      input(type="text" id="loginEmail" placeholder="Enter User Email" required)
+
+      label(for="loginPassword") Password
+      input(type="password" id="loginPassword" placeholder="Enter Password" required)
+
+      button(type="submit") Log In
+
+    a(href="/forgotpassword") Forgot Password
+
+  foot 
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js")
+    script(src="/js/login.js")
