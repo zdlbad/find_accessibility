@@ -17,6 +17,11 @@ const errorController = require('./controllers/errorController');
 
 const app = express();
 
+
+app.use('*', function(req, res) {  
+  res.redirect('http://' + req.headers.host + req.url);
+}
+)
 //set static files folder
 app.use(express.static(path.join(__dirname, 'public')));
 

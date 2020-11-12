@@ -30,6 +30,9 @@ const credentials = {key: privateKey, cet:certificate};
 const httpServer = http.createServer(app);
 const httpsServer = https.createServer(credentials, app);
 
+
+
+
 httpServer.listen(httpPort, () => {
   console.log(`Listening on port ${httpPort} for http...`);
 });
