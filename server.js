@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
+const http = require('http');
 const https = require('https');
 const fs = require('fs');
 
@@ -18,15 +19,21 @@ mongoose
     console.log(`Connected to DB: ${con.connections[0].name} successfully.`);
   });
 
-const port = 3000;
+const httpPort = 3000;
+const httpsPort = 4000;
 const app = require('./app');
 
 
 const privateKey = fs.readFileSync(__dirname + '/selfsigned.key');;
 const certificate = fs.readFileSync(__dirname + '/selfsigned.crt');;
 const credentials = {key: privateKey, cet:certificate};
+const httpServer = http.createServer(app);
 const httpsServer = https.createServer(credentials, app);
 
-httpsServer.listen(port, () => {
-  console.log(`Listening on port ${port}...`);
+httpServer.listen(httpPort, () => {
+  console.log(`Listening on port ${httpPort} for http...`);
+});
+
+httpsServer.listen(httpsPort, () => {
+  console.log(`Listening on port ${httpsPort} for https...`);
 });
