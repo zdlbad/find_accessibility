@@ -32,10 +32,10 @@ const httpServer = http.createServer(app);
 const httpsServer = https.createServer(credentials, app);
 
 
-httpServer.listen(httpPort, () => {
+httpServer.listen(process.env.PORT, () => {
   console.log(`Listening on port ${httpPort} for http...`);
 });
 
-httpsServer.listen(httpsPort, () => {
-  console.log(`Listening on port ${httpsPort} for https...`);
-});
+// httpsServer.listen(httpsPort, () => {
+//   console.log(`Listening on port ${httpsPort} for https...`);
+// });
