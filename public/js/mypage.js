@@ -153,7 +153,7 @@ document.getElementById('logout').addEventListener('click', async function () {
       if (res.data.status === 'success') {
         alert('successfully logged out!');
         window.setTimeout(() => {
-          location.assign('/homepage');
+          location.assign('/app/homepage');
         }, 500);
       }
     } catch (err) {
