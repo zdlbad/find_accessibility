@@ -18,8 +18,6 @@ const errorController = require('./controllers/errorController');
 const app = express();
 
 
-
-
 app.get('/favicon.ico', (req, res) => res.status(204));
 
 //set static files folder
@@ -42,11 +40,11 @@ app.use(hpp({ whitelist: ['duration', 'ratingsAverage', 'ratingsQuantity', 'maxG
 app.use(cookieParser());
 
 //route
-app.use('/', viewRouter);
-app.use('/api/auth', authRouter);
-app.use('/api/users', userRouter);
-app.use('/api/locations', locationRouter);
-app.use('/api/reviews', reviewRouter);
+app.use('/app/', viewRouter);
+app.use('/app/api/auth', authRouter);
+app.use('/app/api/users', userRouter);
+app.use('/app/api/locations', locationRouter);
+app.use('/app/api/reviews', reviewRouter);
 app.all('*', (req, res, next) => {
   next(new Error(`Cannot find ${req.originalUrl} on this server.`));
 });
