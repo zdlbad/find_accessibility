@@ -17,7 +17,7 @@ const login = async (e) => {
         email,
         password,
       },
-      url: '/api/auth/login',
+      url: '/app/api/auth/login',
     });
 
     if (res.data.status === 'success') {

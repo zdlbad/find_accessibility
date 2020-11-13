@@ -20,13 +20,13 @@ const signup = async (e) => {
         password,
         passwordConfirm,
       },
-      url: '/api/auth/signup',
+      url: '/app/api/auth/signup',
     });
 
     if (res.data.status === 'success') {
       alert('successfully signup');
       window.setTimeout(() => {
-        location.assign('/homepage');
+        location.assign('/app/homepage');
       }, 500);
     }
   } catch (err) {

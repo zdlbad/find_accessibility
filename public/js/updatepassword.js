@@ -7,7 +7,7 @@ document.getElementById('updatePasswordForm').addEventListener('submit', async f
     const newPasswordConfirm = document.getElementById('newPasswordConfirm').value;
     const res = await axios({
       method: 'PATCH',
-      url: '/api/auth/updatepassword',
+      url: '/app/api/auth/updatepassword',
       data: {
         oldPassword,
         newPassword,
@@ -18,7 +18,7 @@ document.getElementById('updatePasswordForm').addEventListener('submit', async f
     if (res.data.status === 'success') {
       alert('udpate succeed!');
       window.setTimeout(() => {
-        location.assign('/mypage');
+        location.assign('/app/mypage');
       }, 500);
     } else {
       alert('failed to update password!');

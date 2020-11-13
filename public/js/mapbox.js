@@ -204,7 +204,7 @@ const searchLocations = async (e) => {
   const res = await axios({
     method: 'POST',
     params,
-    url: '/api/locations',
+    url: '/app/api/locations',
   });
 
   console.log('Results length: ', res.data.data.locations.length);
@@ -234,7 +234,7 @@ const searchReviews = async (locationId) => {
   const res = await axios({
     method: 'GET',
     params,
-    url: '/api/reviews',
+    url: '/app/api/reviews',
   });
 
   console.log('Results length: ', res.data.data.reviews.length);

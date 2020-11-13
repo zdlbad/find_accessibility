@@ -6,7 +6,7 @@ document.getElementById('forgotPassword').addEventListener('submit', async funct
     const email = document.getElementById('userEmail').value;
     const res = await axios({
       method: 'POST',
-      url: '/api/auth/forgotpassword',
+      url: '/app/api/auth/forgotpassword',
       data: {
         email,
       },

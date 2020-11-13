@@ -11,14 +11,14 @@ document.getElementById('updateMeForm').addEventListener('submit', async functio
 
   const res = await axios({
     method: 'PATCH',
-    url: '/api/users/updateMe',
+    url: '/app/api/users/updateMe',
     data: form,
   });
 
   if (res.data.status === 'success') {
     alert('udpate succeed!');
     window.setTimeout(() => {
-      location.assign('/mypage');
+      location.assign('/app/mypage');
     }, 500);
   }
 });

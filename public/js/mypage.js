@@ -88,7 +88,7 @@ const searchLocations = async () => {
 
   const res = await axios({
     method: 'GET',
-    url: '/api/locations/visitedLocations',
+    url: '/app/api/locations/visitedLocations',
   });
 
   console.log('Results length: ', res.data.data.locations.length);
@@ -118,7 +118,7 @@ const searchReviews = async (locationId) => {
   const res = await axios({
     method: 'GET',
     params,
-    url: '/api/reviews',
+    url: '/app/api/reviews',
   });
 
   console.log('Results length: ', res.data.data.reviews.length);
@@ -148,7 +148,7 @@ document.getElementById('logout').addEventListener('click', async function () {
     try {
       const res = await axios({
         method: 'GET',
-        url: '/api/auth/logout',
+        url: '/app/api/auth/logout',
       });
       if (res.data.status === 'success') {
         alert('successfully logged out!');

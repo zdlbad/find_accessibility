@@ -19,7 +19,7 @@ document.getElementById('resetPasswordForm').addEventListener('submit', async fu
   if (res.data.status === 'success') {
     alert('Successufully reset password!');
     window.setTimeout(() => {
-      location.assign('/mypage');
+      location.assign('/app/mypage');
     }, 500);
   }
 });
