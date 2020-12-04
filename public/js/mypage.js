@@ -13,11 +13,13 @@ const initMap = async () => {
   map = new mapboxgl.Map({
     container: 'personalMap',
     style: 'mapbox://styles/zdlbad/ckdn5oa9v0tq51imwhzib3hyu',
-    scrollZoom: true,
-    center: [0, 0], // lng,lat
-    maxZoom: 20,
-    minZoom: 1,
+    scrollZoom: false,
+      center: [0, 0], // lng,lat
+      maxZoom: 20,
+      minZoom: 1,
   });
+
+  map.addControl(new mapboxgl.NavigationControl());
 
   //search reviews
   const reviews = await searchReviews();
@@ -30,6 +32,7 @@ const initMap = async () => {
   showLocationList(locations);
   addMarkers(locations);
   displayMarkersInBounds(currentMarkers);
+
 };
 
 const addMarkers = (locations) => {
@@ -73,12 +76,6 @@ const displayMarkersInBounds = (markers) => {
   });
 
   map.fitBounds(bounds, {
-    padding: {
-      top: 200,
-      bottom: 250,
-      left: 200,
-      right: 100,
-    },
     maxZoom: 15,
   });
 };
@@ -153,7 +150,7 @@ document.getElementById('logout').addEventListener('click', async function () {
       if (res.data.status === 'success') {
         alert('successfully logged out!');
         window.setTimeout(() => {
-          location.assign('/app/homepage');
+          location.assign('/app/');
         }, 500);
       }
     } catch (err) {

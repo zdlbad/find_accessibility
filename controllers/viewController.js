@@ -33,6 +33,6 @@ exports.getForgotPasswordPage = (req, res, next) => {
 
 exports.getResetPasswordPage = (req, res, next) => {
   res.status(200).render('resetpassword', {
-    authUrl: `${req.protocol}://${req.get('host')}/api/auth/resetpassword/${req.params.token}`,
+    authUrl: `${req.protocol}://${req.get('host')}/app/api/auth/resetpassword/${req.params.token}`,
   });
 };

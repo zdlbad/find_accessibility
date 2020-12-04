@@ -119,7 +119,7 @@ exports.forgotPassword = catchAsync(async (req, res, next) => {
   await user.save({ validateBeforeSave: false });
 
   //4. form token url
-  const resetURL = `${req.protocol}://${req.get('host')}/resetPassword/${resetToken}`;
+  const resetURL = `${req.protocol}://${req.get('host')}/app/resetPassword/${resetToken}`;
 
   //5. send email
   const emailSender = new EmailSender(email, resetURL);

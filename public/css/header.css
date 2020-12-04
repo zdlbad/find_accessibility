@@ -1,0 +1,32 @@
+header {
+	height: 20vh;
+	background: rgba(6, 199, 6, 1);
+}
+
+#logo {
+	width: 15vh;
+	height: 15vh;
+	border-radius: 50%;
+}
+
+#title {
+	color: white;
+	font-family: Snell Roundhand, cursive;
+	font-size: 3.5vw;
+}
+
+#top-bar-option {
+	color: white;
+}
+
+header a {
+	margin: 10px;
+	color: white;
+	font-size: 1.5vw;
+}
+
+#avatar-header {
+	width: 15vh;
+	height: 15vh;
+	border-radius: 50%;
+}

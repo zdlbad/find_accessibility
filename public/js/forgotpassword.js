@@ -15,7 +15,7 @@ document.getElementById('forgotPassword').addEventListener('submit', async funct
     if (res.data.status === 'success') {
       alert('Email sent to your email, plese use link to reset password');
       window.setTimeout(() => {
-        location.assign('/homepage');
+        location.assign('/app');
       }, 500);
     } else {
       alert('Your email is incorrect, please check again');

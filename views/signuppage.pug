@@ -1,24 +1,27 @@
-doctype html
-html(lang="en")
-  head
-    meta(charset="UTF-8")
-    meta(name="viewport" content="width=device-width, initial-scale=1.0")
-    link(rel="shortcut icon" href="#")
+extends base
 
-    title Swivel | SignUp Page
-  body
-    form#signupForm
-      label(for="signupEmail") Email
-      input(type="text" id="signupEmail" placeholder="Enter User Email" required)
-      br
-      label(for="signupPassword") Password
-      input(type="password" id="signupPassword" placeholder="Enter Password" required)
-      br
-      label(for="signupPasswordConfirm") Password
-      input(type="password" id="signupPasswordConfirm" placeholder="Enter Password Again" required)
+block append head
+  link(href='/css/signup.css' rel='stylesheet')
 
-      button(type="submit") Sign Up
+block content
+  div.container(style="height:100vh;width:100vw;")
+    div.box.center.middle(style="margin-left:-15vw;margin-top:-30vh;")
+      div.dialog-box.container(style="padding-bottom:25vh;padding-top:1vh;")
+        div.title
+          h2 Join in now!
+        form#signupForm.box.center.middle(style="margin-left:-7vw;margin-top:-10vh;")
+          div
+            label(for="signupEmail") Email
+            input(type="text" id="signupEmail" placeholder="Enter User Email" required)
+          div(style="margin-top:2vh;")
+            label(for="signupPassword") Password
+            input(type="password" id="signupPassword" placeholder="Enter Password" required)
+          div(style="margin-top:2vh;")
+            label(for="signupPasswordConfirm") Password
+            input(type="password" id="signupPasswordConfirm" placeholder="Enter Password Again" required)
+          div(style="margin-left:3vw;margin-top:5vh;;margin-bottom:20px;")
+            button.button(type="submit") Sign Up
 
-  foot 
-    script(src="http://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js")
-    script(src="/js/signup.js")
+block append foot 
+  script(src="http://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js")
+  script(src="/js/signup.js")

@@ -47,11 +47,14 @@ const initMap = () => {
     map = new mapboxgl.Map({
       container: 'map',
       style: 'mapbox://styles/zdlbad/ckdn5oa9v0tq51imwhzib3hyu',
-      scrollZoom: true,
+      scrollZoom: false,
       center: [0, 0], // lng,lat
+      zoom: 12,
       maxZoom: 15,
       minZoom: 1,
     });
+
+    map.addControl(new mapboxgl.NavigationControl());
 
     //add move to current location control button
     map.addControl(
