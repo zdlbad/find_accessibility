@@ -21,5 +21,5 @@ const app = require('./app');
 
 
 app.listen(process.env.PORT, () => {
-  console.log(`Listening on port ${httpPort} for http...`);
+  console.log(`Listening on port ${process.env.PORT} for http...`);
 });
