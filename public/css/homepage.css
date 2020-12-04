@@ -14,19 +14,3 @@
 	font-size: 18px;
 	border-radius: 5px;
 }
-
-.scrollable-horizontal {
-	overflow: auto;
-	max-height: 100vw;
-	white-space: nowrap;
-}
-
-.scrollable-vertical {
-	overflow: auto;
-	max-height: 100vh;
-}
-
-#horizontal-list li {
-	display: inline-block;
-	zoom: 1;
-}

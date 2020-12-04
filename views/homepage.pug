@@ -74,31 +74,12 @@ block content
     div#map.map.three-column-middle
 
     div#locations-block.three-column-right.scrollable-vertical
-      ul
-        - i = 0
-        - while (i < 10)
-          -i++
-          li
-            h1 location
-            p this is a mock location
-            p this is a mock location
-            p this is a mock location
-            p this is a mock location
 
     div#reviews-block.three-column-bottom.scrollable-horizontal
-      ul#horizontal-list
-        - i = 0
-        - while (i < 10)
-          -i++
-          li
-            h1 Review
-            p this is a mock review
-            p this is a mock review
-            p this is a mock review
-            p this is a mock review
+
 
 
 
 block append foot
   script(src="http://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js")
-  script(src='/js/mapbox.js')
+  script(src='/js/homepage.js')

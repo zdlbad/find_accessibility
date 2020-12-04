@@ -23,6 +23,33 @@ body {
 	cursor: pointer;
 }
 
+.marker-parking {
+	background-image: url("../image/pin-parking.png");
+	background-size: cover;
+	width: 32px;
+	height: 40px;
+	cursor: pointer;
+}
+
+.marker-station {
+	background-image: url("../image/pin-station.png");
+	background-size: contain;
+	background-position: center;
+	width: 30px;
+	height: 40px;
+	cursor: pointer;
+}
+
+.marker-toilet {
+	background-image: url("../image/pin-toilet.png");
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 32px;
+	height: 40px;
+	cursor: pointer;
+}
+
 .float-left {
 	float: left;
 }
@@ -101,4 +128,44 @@ body {
 	height: 37%;
 	background-color: rgba(255, 255, 255, 0.932);
 	border-radius: 5px;
+}
+
+.location-box {
+	width: 80%;
+	padding: 10px;
+	border-bottom: dashed 1px rgb(13, 19, 1);
+}
+
+.location-box div {
+	margin: 2px;
+}
+
+.scrollable-horizontal {
+	overflow: auto;
+	max-height: 100vw;
+	white-space: nowrap;
+}
+
+.scrollable-vertical {
+	overflow: auto;
+	max-height: 100vh;
+}
+
+.horizontal-list li {
+	position: relative;
+	display: inline-block;
+	padding-right: 2vw;
+	padding-left: 2vw;
+	width: 17vw;
+	border-right: dashed 2px black;
+}
+
+#review-box {
+	position: absolute;
+	top: 0;
+}
+
+#review-box div {
+	white-space: pre-wrap;
+	margin-top: 5px;
 }
