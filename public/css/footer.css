@@ -1,0 +1,39 @@
+footer {
+	position: relative;
+	background-color: rgba(6, 199, 6, 1);
+	height: 20vh;
+	margin-top: 10vh;
+}
+
+footer h3 {
+	text-align: center;
+	color: white;
+}
+
+#about {
+	position: absolute;
+	left: 10%;
+	width: 20%;
+}
+
+#author {
+	position: absolute;
+	left: 40%;
+	width: 20%;
+}
+
+#mobile-link {
+	position: absolute;
+	left: 75%;
+	width: 10%;
+}
+
+.links > a {
+	display: inline-block;
+	width: 50%;
+}
+
+.shop-icon {
+	height: 30px;
+	width: 100px;
+}

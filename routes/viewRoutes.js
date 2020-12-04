@@ -12,7 +12,7 @@ router.use((req, res, next) => {
   next();
 });
 
-router.route('/homepage').get(authController.isLoggedIn, viewController.getHomePage);
+router.route('/').get(authController.isLoggedIn, viewController.getHomePage);
 router.route('/login').get(viewController.login);
 router.route('/signup').get(viewController.signup);
 router.route('/mypage').get(authController.protect, viewController.getMyPage);

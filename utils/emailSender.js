@@ -9,12 +9,11 @@ module.exports = class Email {
 
   async send() {
     const transporter = nodemailer.createTransport({
-      host: 'smtp.mailtrap.io',
-      port: 2525,
-      auth: {
-        user: '0ecd930915f0d7',
-        pass: 'f678bd44082f92',
-      },
+      service: 'gmail',
+      auth:{
+        user: 'zdlbad@gmail.com',
+        pass: 'Zdl@Google'
+      }
     });
 
     const mailOption = {

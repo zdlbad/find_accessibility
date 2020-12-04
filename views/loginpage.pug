@@ -1,23 +1,27 @@
-doctype html
-html(lang="en")
-  head
-    meta(charset="UTF-8")
-    meta(name="viewport" content="width=device-width, initial-scale=1.0")
-    link(rel="shortcut icon" href="#")
+extends base
 
-    title Swivel | Login Page
-  body
-    form#loginForm
-      label(for="loginEmail") Email
-      input(type="text" id="loginEmail" placeholder="Enter User Email" required)
+block append head
+  link(href='/css/loginpage.css' rel='stylesheet')
 
-      label(for="loginPassword") Password
-      input(type="password" id="loginPassword" placeholder="Enter Password" required)
+block content
+  div.container(style="height:100vh;")
+    div.box.center.middle(style="margin-left:-15vw;margin-top:-30vh;")
+      div.dialog-box.container(style="padding-bottom:20vh;padding-top:1vh;")
+        div.title
+          h2 Welcome back!
+        form#loginForm.box.center.middle(style="margin-left:-8vw;margin-top:-5vh;")
+          div
+            label(for="loginEmail") Email:
+            input(type="text" id="loginEmail" placeholder="Enter User Email" required)
 
-      button(type="submit") Log In
+          div(style="margin-top:10px;")
+            label(for="loginPassword") Password:
+            input(type="password" id="loginPassword" placeholder="Enter Password" required)
 
-    a(href="/app/forgotpassword") Forgot Password
+          div(style="margin-top:5vh;margin-bottom:5vh")
+            button.button(type="submit") Log In
+            a(href="/app/forgotpassword") Forgot Password
 
-  foot 
-    script(src="http://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js")
-    script(src="/js/login.js")
+block append foot 
+  script(src="http://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js")
+  script(src="/js/login.js")

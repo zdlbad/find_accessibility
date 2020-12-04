@@ -1,0 +1,35 @@
+.button {
+	background-color: #4caf50; /* Green */
+	border: none;
+	color: white;
+	padding: 10px 15px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 18px;
+	border-radius: 5px;
+	width: 60%;
+	margin-top: 1vh;
+	margin-bottom: 1vh;
+}
+
+.scrollable-horizontal {
+	overflow: auto;
+	max-height: 100vw;
+	white-space: nowrap;
+}
+
+.scrollable-vertical {
+	overflow: auto;
+	max-height: 100vh;
+}
+
+#horizontal-list li {
+	display: inline-block;
+	zoom: 1;
+}
+
+#avatar-profile {
+	width: 80%;
+	height: 80%;
+}

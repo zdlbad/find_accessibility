@@ -1,31 +1,52 @@
-doctype html
-html(lang="en")
-  head
-    meta(charset="UTF-8")
-    meta(name="viewport" content="width=device-width, initial-scale=1.0")
-    script(src='http://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.js')
-    link(href='http://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css' rel='stylesheet')
-    link(rel='stylesheet' href='/css/style.css')
-    title Swivel | My Page
-  body
-    h1= `Hi, ${user.name}! This is your own page!`
-    img(src=`/image/users/${user.photo}`, alt="User Photo")
-    div#userInfo(data-userid= `${user.id}`)
+extends base
 
-    div
-      a(href="/app/updatepage") Update my profile
-      br
-      a(href="/app/updatepassword") Reset Password
-      br
-      button#logout Log Out
+block append head
+  script(src='http://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.js')
+  link(href='http://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css' rel='stylesheet')
+  link(href='/css/mypage.css' rel='stylesheet')
 
+block content  
 
-    div
-      div#personalMap.map.floatLeft
-      div#locations-block.floatLeft
-      div#reviews-block.floatLeft
+  div.three-column-container
+    div.three-column-left.scrollable-vertical
+      h3(style="text-align:center;")= `Hi, ${user.name}!`
+      div(style="margin-left:3vw;")
+        img#avatar-profile(src=`/image/users/${user.photo}`, alt="User Photo")
+        div#userInfo(data-userid= `${user.id}`)
+        div(style="margin-left:1vw;")
+          a.button(href="/app/updatepage") Update profiles
+          br
+          a.button(href="/app/updatepassword") Update Password
+          br
+          a#logout.button Log out
 
-  foot
-    script(src="http://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js")
-    script(src='/js/mypage.js')
+    div#personalMap.map.three-column-middle
+
+    div#locations-block.three-column-right.scrollable-vertical
+      ul
+        - i = 0
+        - while (i < 10)
+          -i++
+          li
+            h1 location
+            p this is a mock location
+            p this is a mock location
+            p this is a mock location
+            p this is a mock location
+
+    div#reviews-block.three-column-bottom.scrollable-horizontal
+      ul#horizontal-list
+        - i = 0
+        - while (i < 10)
+          -i++
+          li
+            h1 Review
+            p this is a mock review
+            p this is a mock review
+            p this is a mock review
+            p this is a mock review
+
+block append foot
+  script(src="http://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js")
+  script(src='/js/mypage.js')
 

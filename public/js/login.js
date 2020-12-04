@@ -23,7 +23,7 @@ const login = async (e) => {
     if (res.data.status === 'success') {
       alert('successfully login');
       window.setTimeout(() => {
-        location.assign('/homepage');
+        location.assign('/app/');
       }, 500);
     }
   } catch (err) {

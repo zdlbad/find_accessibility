@@ -26,7 +26,7 @@ const signup = async (e) => {
     if (res.data.status === 'success') {
       alert('successfully signup');
       window.setTimeout(() => {
-        location.assign('/app/homepage');
+        location.assign('/app/');
       }, 500);
     }
   } catch (err) {

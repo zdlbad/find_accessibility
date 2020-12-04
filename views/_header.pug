@@ -1,0 +1,23 @@
+block append head
+  link(rel='stylesheet' href='/css/header.css')
+
+header.container
+  div
+    a(href="/app/")
+      img#logo.box.left.middle(style="margin-top: -7.5vh;margin-left: 1vh; " src="/image/logo.png")
+
+  div#title.box.center.middle
+    h2(style="margin-top: -7vh;margin-left: -20vw;") 
+      u Move  without  fear
+
+  div#top-bar-option.box.right.middle(style="margin-right: 2vw;")
+    if user
+      div
+        label= `Hello! ${user.name}`
+        img#avatar-header(src=`/image/users/${user.photo}`, alt="User Photo" style="margin-top: -7.5vh;margin-left: 1vh;")
+        a(href='/app/mypage') My Page
+    else
+      div
+        a(href='/app/login') Login
+        span |
+        a(href='/app/signup') SignUp

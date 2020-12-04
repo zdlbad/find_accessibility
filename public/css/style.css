@@ -1,16 +1,104 @@
+html {
+	font-family: Arial, sans-serif;
+}
+
+body {
+	background-image: url(/image/background.png);
+	background-size: cover;
+	background-position: center;
+}
+
 .map {
-  height: 650px;
-  width: 650px;
+	height: 600px;
+	width: 600px;
+	border: ridge 10px rgba(102, 110, 113, 0.678);
+	border-radius: 2%;
 }
 
 .marker {
-  background-image: url('../image/pin.png');
-  background-size: cover;
-  width: 32px;
-  height: 40px;
-  cursor: pointer;
+	background-image: url("../image/pin.png");
+	background-size: cover;
+	width: 32px;
+	height: 40px;
+	cursor: pointer;
 }
 
-.floatLeft {
-  float: left;
+.float-left {
+	float: left;
+}
+
+.container {
+	position: relative;
+}
+
+.box {
+	position: absolute;
+}
+
+.top {
+	top: 0;
+}
+.middle {
+	top: 50%;
+	margin-top: -0; /*half of the .box height*/
+}
+.bottom {
+	bottom: 0;
+}
+
+.left {
+	left: 100px;
+}
+.center {
+	left: 50%;
+	margin-left: -0; /*half of the .box width*/
+}
+.right {
+	right: 0;
+}
+
+.three-column-container {
+	position: relative;
+	height: 75vh;
+	margin-top: 1vh;
+}
+
+.three-column-left {
+	position: absolute;
+	top: 1%;
+	left: 1%;
+	width: 20%;
+	height: 98%;
+	background-color: rgba(255, 255, 255, 0.932);
+	border-radius: 5px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.three-column-middle {
+	position: absolute;
+	top: 1%;
+	left: 23%;
+	width: 50%;
+	height: 58%;
+}
+
+.three-column-right {
+	position: absolute;
+	top: 1%;
+	left: 77%;
+	width: 20%;
+	height: 60%;
+	background-color: rgba(255, 255, 255, 0.932);
+	border-radius: 5px;
+}
+
+.three-column-bottom {
+	position: absolute;
+	top: 65%;
+	left: 22%;
+	width: 75%;
+	height: 37%;
+	background-color: rgba(255, 255, 255, 0.932);
+	border-radius: 5px;
 }

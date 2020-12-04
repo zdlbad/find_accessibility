@@ -1,22 +1,25 @@
-doctype html
-html(lang="en")
-  head
-    meta(charset="UTF-8")
-    meta(name="viewport" content="width=device-width, initial-scale=1.0")
-    link(rel="shortcut icon" href="#")
+extends base
 
-    title Swivel | Update Me Page
-  body
-    form#updateMeForm
-      label(for="userName") New Name
-      input(type="text" id="newNameInput" placeholder="Enter a New Name" required)
-      img(src=`/image/users/${user.photo}` alt="User photo")
-      input(type="file" accept='image/*' id="userPhoto")
-      label(for="userPhoto") New Photo
+block append head
+  link(rel='stylesheet' href='/css/updateme.css')
 
-      button(type="submit") Update
+block content
+  div.container(style="height:100vh;width:100vw;")
+    div.box.center.middle(style="margin-left:-15vw;margin-top:-30vh;")
+      div.dialog-box.container(style="padding-bottom:10vh;padding-top:1vh;")
+        div.title
+          h2 Update your profiles
+        form#updateMeForm.box.center.middle(style="margin-left:-8vw;margin-top:-5vh;")
+          div
+            label(for="userName") New Name: 
+            input(type="text" id="newNameInput" value=`${user.name}` required)
+          div(style="margin-top:10px;")
+            label(for="userPhoto") New Photo: 
+            input(type="file" accept='image/*' id="userPhoto")
+          div(style="margin-top:5vh;margin-left:3vw;")
+            button.button(type="submit") Update
 
 
-  foot 
-    script(src="http://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js")
-    script(src="/js/updateMe.js")
+block append foot 
+  script(src="http://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js")
+  script(src="/js/updateMe.js")
