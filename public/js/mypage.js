@@ -4,7 +4,7 @@ console.log('Hello from mypage.js .');
 
 mapboxgl.accessToken = 'pk.eyJ1IjoiemRsYmFkIiwiYSI6ImNrZG40bnRhMjFleWEyenBkbXlqNGl6MzUifQ.9A8dhjvLqauqyQfdrcXZSA';
 const userId = document.getElementById('userInfo').dataset.userid;
-const currentMarkers = [];
+const currentMarkers = []; 
 
 let map;
 
@@ -40,7 +40,14 @@ const addMarkers = (locations) => {
   locations.forEach((loc) => {
     // Create marker
     const el = document.createElement('div');
-    el.className = 'marker';
+    console.log(loc.locationType)
+    switch (loc.locationType) {
+      case 'parking': el.className = 'marker-parking';break;
+      case 'toilet': el.className = 'marker-toilet';break;
+      case 'trainStation': el.className = 'marker-station';break;
+      default: el.className = 'marker';
+    }
+    console.log(el.className);
 
     // Add popup to marker
     const popup = new mapboxgl.Popup({
@@ -98,10 +105,27 @@ const showLocationList = (locations) => {
   const locationsBlock = document.getElementById('locations-block');
   const ul = document.createElement('ul');
   locationsBlock.appendChild(ul);
-  locations.forEach((location) => {
+  locations.forEach((loc) => {
+    const div = document.createElement('div');
+    div.classList.add("location-box");
+    const type = document.createElement('div')
+    type.innerHTML = `Type: ${loc.locationType}`;
+    const name = document.createElement('div');
+    name.innerHTML = `Name: ${loc.name}`;
+    const ratingAvg = document.createElement('div');
+    ratingAvg.innerHTML = `Rating Average: ${loc.ratingAvg}`;
+    const desp = document.createElement('div');
+    desp.innerHTML = `Rating Average: ${loc.location.description}`;
+    const addr = document.createElement('div');
+    addr.innerHTML = `Address: ${loc.location.address}`;
+    div.appendChild(type);
+    div.appendChild(name);
+    div.appendChild(ratingAvg);
+    div.appendChild(desp);
+    div.appendChild(addr);
     const li = document.createElement('li');
+    li.appendChild(div);
     ul.appendChild(li);
-    li.innerHTML = `location: ${location._id}`;
   });
 };
 
@@ -130,11 +154,28 @@ const clearElement = (elementId) => {
 const showReviewsList = (reviews) => {
   const reviewsBlock = document.getElementById('reviews-block');
   const ul = document.createElement('ul');
+  ul.classList.add('horizontal-list')
   reviewsBlock.appendChild(ul);
-  reviews.forEach((review) => {
+  reviews.forEach((rev) => {
+    const box = document.createElement('div');
+    box.classList.add("review-box");
+    box.id = "review-box"
+
+    const user = document.createElement('div')
+    user.innerHTML = `<b>User:</b> ${rev.user.name}`;
+
+    const comment = document.createElement('div');
+    comment.innerHTML = `<b>Comments:</b> ${rev.comment}`;
+
+    const rating = document.createElement('div');
+    rating.innerHTML = `<b>Rating:</b> ${rev.rating}`;
+    
+    box.appendChild(user);
+    box.appendChild(comment);
+    box.appendChild(rating);
     const li = document.createElement('li');
+    li.appendChild(box);
     ul.appendChild(li);
-    li.innerHTML = `reivew: ${review.id}`;
   });
 };
 

@@ -23,8 +23,8 @@ const login = async (e) => {
     if (res.data.status === 'success') {
       alert('successfully login');
       window.setTimeout(() => {
-        location.assign('/app/');
-      }, 500);
+        location.assign('/app/mypage');
+      }, 2);
     }
   } catch (err) {
     alert('login failed');

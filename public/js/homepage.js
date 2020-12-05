@@ -1,6 +1,6 @@
 /* eslint-disable*/
 
-console.log('Hello from the mapbox.js .');
+console.log('Hello from the homepage.js .');
 
 mapboxgl.accessToken = 'pk.eyJ1IjoiemRsYmFkIiwiYSI6ImNrZG40bnRhMjFleWEyenBkbXlqNGl6MzUifQ.9A8dhjvLqauqyQfdrcXZSA';
 
@@ -12,6 +12,7 @@ const centerLat = document.getElementById('centerLat');
 const centerLng = document.getElementById('centerLng');
 const searchRadius = document.getElementById('searchRadius');
 const searchRadiusLabel = document.getElementById('searchRadiusLabel');
+const searchButton = document.getElementById('search-button');
 const dragableMarker = new mapboxgl.Marker({ draggable: true });
 const currentMarkers = [];
 let map;
@@ -39,6 +40,8 @@ const initPage = () => {
   searchRadius.onchange = () => {
     searchRadiusLabel.innerHTML = searchRadius.value;
   };
+
+  searchButton.click();
 };
 
 const initMap = () => {
@@ -70,9 +73,12 @@ const initMap = () => {
       updateCenterLabel();
     });
 
-    // get current location then add dragable marker and move camera
+    // get current location then add dragable marker and move camera to melbourne city
     navigator.geolocation.getCurrentPosition((position) => {
-      const { longitude, latitude } = position.coords;
+      let { longitude, latitude } = position.coords;
+      //change to mebourne city coords
+      longitude = 144.9635085730734;
+      latitude = -37.814879057648184;
 
       //add dragable marker and popup
       dragableMarker.setLngLat([longitude, latitude]).on('dragend', updateCenterLabel).addTo(map);
@@ -108,20 +114,18 @@ const addMarkers = (locations) => {
   locations.forEach((loc) => {
     // Create marker
     const el = document.createElement('div');
-    console.log(loc.locationType);
     switch (loc.locationType) {
       case 'parking': el.className = 'marker-parking';break;
       case 'toilet': el.className = 'marker-toilet';break;
       case 'trainStation': el.className = 'marker-station';break;
       default: el.className = 'marker';
     }
-    console.log(el.className);
     // Add popup to marker
     const popup = new mapboxgl.Popup({
       offset: 30,
     })
       .setLngLat(loc.location.coordinates)
-      .setHTML(`<p> ${loc.locationType}: ${loc.name}</p> <p> Description: ${loc.location.description} </p>`);
+      .setHTML(`<p> ${loc.locationType}: ${loc.name}</p>`);
 
     // Add marker
     const marker = new mapboxgl.Marker({
@@ -130,7 +134,7 @@ const addMarkers = (locations) => {
     });
 
     marker.getElement().addEventListener('click', async (e) => {
-      e.stopPropagation();
+      //e.stopPropagation();
       const reviews = await searchReviews(loc.id);
       clearElement('reviews-block');
       showReviewsList(reviews);
@@ -166,7 +170,10 @@ const getParams = () => {
   const typeSelected = [];
 
   // get center
-  params.center = [dragableMarker.getLngLat().lng, dragableMarker.getLngLat().lat].join(',');
+  if (!dragableMarker.getLngLat()) 
+    params.center = [144.9635085730734,-37.814879057648184].join(',');
+  else 
+    params.center = [dragableMarker.getLngLat().lng, dragableMarker.getLngLat().lat].join(',');
 
   // get radius (km)
   params.within = searchRadius.value;
@@ -206,7 +213,7 @@ const getParams = () => {
 const searchLocations = async (e) => {
   console.log('searching locations... ');
 
-  e.preventDefault();
+  if(e) e.preventDefault();
 
   const params = getParams();
 
@@ -234,12 +241,15 @@ const showLocationList = (locations) => {
     type.innerHTML = `Type: ${loc.locationType}`;
     const name = document.createElement('div');
     name.innerHTML = `Name: ${loc.name}`;
+    const ratingAvg = document.createElement('div');
+    ratingAvg.innerHTML = `Rating Average: ${loc.ratingAvg}`;
     const desp = document.createElement('div');
-    desp.innerHTML = `Decription: ${loc.location.description}`;
+    desp.innerHTML = `Rating Average: ${loc.location.description}`;
     const addr = document.createElement('div');
     addr.innerHTML = `Address: ${loc.location.address}`;
     div.appendChild(type);
     div.appendChild(name);
+    div.appendChild(ratingAvg);
     div.appendChild(desp);
     div.appendChild(addr);
     const li = document.createElement('li');

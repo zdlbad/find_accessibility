@@ -47,12 +47,18 @@ exports.getUserReviewedPostion = catchAsync(async (req, res, next) => {
       $addFields: {
         _id: '$reviewedLocaitons._id',
         location: '$reviewedLocaitons.location',
+        locationType: '$reviewedLocaitons.locationType',
+        name: '$reviewedLocaitons.name',
+        ratingAvg: '$reviewedLocaitons.ratingAvg',
       },
     },
     {
       $project: {
         _id: 1,
         location: 1,
+        locationType: 1,
+        name: 1,
+        ratingAvg: 1,
       },
     },
   ]);
